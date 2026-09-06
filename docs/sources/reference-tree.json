@@ -1,0 +1,265 @@
+{
+    "sha":  "897f5b1f751626b24f8b8edde1bc4bc9fdf08f9c",
+    "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/897f5b1f751626b24f8b8edde1bc4bc9fdf08f9c",
+    "tree":  [
+                 {
+                     "path":  ".gitignore",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5fe6982706fba46cd6ff2fe23b203d6c239cdfe1",
+                     "size":  43,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/5fe6982706fba46cd6ff2fe23b203d6c239cdfe1"
+                 },
+                 {
+                     "path":  "20260830_151851_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a812756834b56a4e6ba33c5b84807a724105d7e8",
+                     "size":  15284,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/a812756834b56a4e6ba33c5b84807a724105d7e8"
+                 },
+                 {
+                     "path":  "erc_images",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "5106463a6b31285bc035b1958c5016806d928676",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/5106463a6b31285bc035b1958c5016806d928676"
+                 },
+                 {
+                     "path":  "erc_images/20260830_145827_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9dc19803982ac077ca63b1c04570570573c89be0",
+                     "size":  12413,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/9dc19803982ac077ca63b1c04570570573c89be0"
+                 },
+                 {
+                     "path":  "erc_images/20260830_151207_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "99f10a8374c37e256e43dd6c0c86aada1478c385",
+                     "size":  15294,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/99f10a8374c37e256e43dd6c0c86aada1478c385"
+                 },
+                 {
+                     "path":  "erc_images/20260830_151851_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a812756834b56a4e6ba33c5b84807a724105d7e8",
+                     "size":  15284,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/a812756834b56a4e6ba33c5b84807a724105d7e8"
+                 },
+                 {
+                     "path":  "erc_images/20260830_152414_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "95b1ce17d956943457d6e7c38cb5744924f9b1e9",
+                     "size":  15474,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/95b1ce17d956943457d6e7c38cb5744924f9b1e9"
+                 },
+                 {
+                     "path":  "erc_images/20260830_152805_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2dfefaf51e336fb836e2e2916c2648776c90a14f",
+                     "size":  15296,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/2dfefaf51e336fb836e2e2916c2648776c90a14f"
+                 },
+                 {
+                     "path":  "erc_images/20260830_153012_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b710fab861dbdbfca2dbc689b3420f1c3506ecaa",
+                     "size":  15096,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/b710fab861dbdbfca2dbc689b3420f1c3506ecaa"
+                 },
+                 {
+                     "path":  "erc_images/20260830_153715_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "df7b2e88eeeed8e0ccc69133bc6f520804e98831",
+                     "size":  15300,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/df7b2e88eeeed8e0ccc69133bc6f520804e98831"
+                 },
+                 {
+                     "path":  "erc_images/20260830_154721_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "57e3df3f07468aeb849bbe0f94f37673cc55c0ac",
+                     "size":  15416,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/57e3df3f07468aeb849bbe0f94f37673cc55c0ac"
+                 },
+                 {
+                     "path":  "erc_images/20260830_160254_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "85a93b7aef39e953534ed83bc33d9439a6b57468",
+                     "size":  15254,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/85a93b7aef39e953534ed83bc33d9439a6b57468"
+                 },
+                 {
+                     "path":  "erc_images/20260830_185118_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0c9c16b41190cd98ed35b9b5e3e923d1c5eac158",
+                     "size":  25766,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/0c9c16b41190cd98ed35b9b5e3e923d1c5eac158"
+                 },
+                 {
+                     "path":  "erc_images/20260830_185129_red_book.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b63ebbb4385297d53b07b2f06649df039186e984",
+                     "size":  24970,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/b63ebbb4385297d53b07b2f06649df039186e984"
+                 },
+                 {
+                     "path":  "erc_images/20260830_185612_shelf_column.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "104c4d6a194d7f324776915b593f8e6bda3216ef",
+                     "size":  33435,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/104c4d6a194d7f324776915b593f8e6bda3216ef"
+                 },
+                 {
+                     "path":  "erc_images/20260830_185623_red_book.jpg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2b25aa2d6777a38a97e62ef23df6fad2223ebfa5",
+                     "size":  31757,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/2b25aa2d6777a38a97e62ef23df6fad2223ebfa5"
+                 },
+                 {
+                     "path":  "erc_solution",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d2752a9ea6728919c72d1e2b537cedbcf7a11726",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/d2752a9ea6728919c72d1e2b537cedbcf7a11726"
+                 },
+                 {
+                     "path":  "erc_solution/__init__.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                     "size":  0,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+                 },
+                 {
+                     "path":  "erc_solution/__pycache__",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "a80736b8cb10672d9cd860946ef6393f976daabc",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/a80736b8cb10672d9cd860946ef6393f976daabc"
+                 },
+                 {
+                     "path":  "erc_solution/__pycache__/__init__.cpython-310.pyc",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5fa548b87c45acebbf3db775f054d32c314374c3",
+                     "size":  148,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/5fa548b87c45acebbf3db775f054d32c314374c3"
+                 },
+                 {
+                     "path":  "erc_solution/__pycache__/solution.cpython-310.pyc",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8d55f134a76ef5e6c00acb09f8f188a72a90527c",
+                     "size":  8635,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/8d55f134a76ef5e6c00acb09f8f188a72a90527c"
+                 },
+                 {
+                     "path":  "erc_solution/solution.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f5006cc3fb596b707decdc4535f00de1fde08a14",
+                     "size":  9150,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/f5006cc3fb596b707decdc4535f00de1fde08a14"
+                 },
+                 {
+                     "path":  "launch",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "3bf5cee0779da897d15f0666e6b37b967c49eeed",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/3bf5cee0779da897d15f0666e6b37b967c49eeed"
+                 },
+                 {
+                     "path":  "launch/solution.launch.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5abfb8b5de41eb3038f9fde96cc32ce464f3e7c8",
+                     "size":  697,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/5abfb8b5de41eb3038f9fde96cc32ce464f3e7c8"
+                 },
+                 {
+                     "path":  "package.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "94544d495e739b1df6e24390f24509bf7b2bf9cd",
+                     "size":  808,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/94544d495e739b1df6e24390f24509bf7b2bf9cd"
+                 },
+                 {
+                     "path":  "resource",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "470d0c12d14f44d0c8be26177dfe3ba21952480a",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/470d0c12d14f44d0c8be26177dfe3ba21952480a"
+                 },
+                 {
+                     "path":  "resource/erc_solution",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                     "size":  0,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+                 },
+                 {
+                     "path":  "setup.cfg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f6186abe385c4f9d50b47a0a884dc7121edd6734",
+                     "size":  93,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/f6186abe385c4f9d50b47a0a884dc7121edd6734"
+                 },
+                 {
+                     "path":  "setup.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a31819af24a31d95e9ab11b6f5f82e5ff3eed011",
+                     "size":  820,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/a31819af24a31d95e9ab11b6f5f82e5ff3eed011"
+                 },
+                 {
+                     "path":  "test",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "14253db5d5378988b2b60257172c0f221b58d58c",
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/trees/14253db5d5378988b2b60257172c0f221b58d58c"
+                 },
+                 {
+                     "path":  "test/test_copyright.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "97a39196e84db97954341162a6d2e7f771d938c0",
+                     "size":  962,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/97a39196e84db97954341162a6d2e7f771d938c0"
+                 },
+                 {
+                     "path":  "test/test_flake8.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "27ee1078ff077cc3a0fec75b7d023101a68164d1",
+                     "size":  884,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/27ee1078ff077cc3a0fec75b7d023101a68164d1"
+                 },
+                 {
+                     "path":  "test/test_pep257.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b234a3840f4c5bd38f043638c8622b8f240e1185",
+                     "size":  803,
+                     "url":  "https://api.github.com/repos/SaberFaceLove/erc-competition-2026/git/blobs/b234a3840f4c5bd38f043638c8622b8f240e1185"
+                 }
+             ],
+    "truncated":  false
+}

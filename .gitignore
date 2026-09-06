@@ -1,0 +1,13 @@
+.tools/
+official/
+references/
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.db3
+*.mcap
+.env
+docs/sources/reference-*.txt
+docs/sources/USER_REQUEST.txt
