@@ -40,3 +40,8 @@ USER: follow docs/UBUNTU_INSTALL_CHECKLIST.md to install native Ubuntu 22.04.5 A
 NEXT AGENT: read this file, docs/DECISIONS.md, docs/COMPETITION_REQUIREMENTS.md and local original request if present. Verify installed native Ubuntu 22.04 x86_64, not merely live USB/WSL; inspect CPU/RAM/disk/GPU/Xorg. Recheck official release, main and issue #2 before choosing baseline. Clone clean on Linux. Install needed Docker host prerequisites per current official instructions, run official up.sh --build, attach, colcon build --symlink-install, source and simulation.launch.py. Verify simulator before basic controls; then live interface discovery, then perception scoring. Follow user phases, safety and persistence requirements.
 
 Do not change robot/world/physics, use both arms, invent trial success, push GitHub, or publish without authorization. No disk/boot/encryption changes were made in Phase 0.
+
+## USB preparation update
+User approved erasing external D: (32 GB USB, serial 121220160204) and declined backup. Installer download in progress; Rufus signed by Akeo Consulting prepared. No USB write yet. See docs/USB_PREPARATION.md. Internal-disk/boot changes remain outside this authorization.
+
+USB milestone: Ubuntu ISO complete and SHA256 verified. Rufus open, correct D: device observed. Elevated UI ignores automated clicks; user asked to select the prepared ISO. USB write and verification remain pending. Windows partitions unchanged.

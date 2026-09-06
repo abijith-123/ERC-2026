@@ -17,3 +17,5 @@
 | Robot controls/perception/grasp/trials | NOT IMPLEMENTED / NOT RUN |
 
 No trial metrics, evidence images, or mission success have been fabricated. Source snapshots are research evidence only. Documentation checks do not validate robotics functionality.
+
+Ubuntu media preparation: ISO SHA256 PASS, Rufus Authenticode Valid (Akeo Consulting). USB bootability NOT TESTED; media not written yet.

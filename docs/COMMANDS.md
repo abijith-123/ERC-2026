@@ -58,3 +58,5 @@ ros2 launch erc_bringup simulation.launch.py
 For subsequent terminals use attach.sh only. up.sh stops/removes the existing erc_sim container and rebuilds without cache when --build is passed; do not run it to open another shell. Network required for an uncached build. Do not issue README motion examples until baseline safety conditions and stop command are prepared.
 
 Final checks: nine required documents exist/nonempty; PDF SHA256 matches; official/reference git status clean. Local audit commit uses explicit agent identity Codex <codex@localhost> for this command only because user.name/email were not configured; no global identity changes.
+
+USB preparation: curl.exe downloaded Canonical Ubuntu 22.04.5 desktop AMD64 ISO and SHA256SUMS; Get-FileHash match PASS. Rufus 4.15p downloaded from pbatard release, Get-AuthenticodeSignature Valid. Start-Process opened signed Rufus; user handled UAC. Read-only D: disk identity: USB Disk 1, 31,914,983,424 bytes, serial 121220160204. No erase command issued.
