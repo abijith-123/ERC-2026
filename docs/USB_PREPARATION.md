@@ -12,3 +12,5 @@ status Valid, publisher Akeo Consulting. Windows administrator prompt requires u
 No USB data erased yet. ISO checksum and boot-media write/verification still pending.
 
 Download completed: 4,762,707,968 bytes. SHA256 verified against Canonical SHA256SUMS (PASS); see sources/ubuntu-iso-verification.json. User approved Rufus UAC and downloaded DBX check files. Rufus displays NO_LABEL (D:) [32 GB]. Automated clicks do not take effect in elevated Rufus; manual file-selection requested. USB still NOT written.
+
+USB write completed by user in Rufus. Verification: D: serial 121220160204, USB Disk 1, GPT/FAT32, Ubuntu 22.04.5 amd64 release identity. EFI/BOOT/BOOTX64.EFI, boot/grub/grub.cfg, casper/vmlinuz and casper/initrd present. This verifies media structure, not actual firmware boot. Next: manually boot USB and choose Try Ubuntu; no internal-disk changes authorized.

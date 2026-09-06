@@ -19,3 +19,5 @@
 No trial metrics, evidence images, or mission success have been fabricated. Source snapshots are research evidence only. Documentation checks do not validate robotics functionality.
 
 Ubuntu media preparation: ISO SHA256 PASS, Rufus Authenticode Valid (Akeo Consulting). USB bootability NOT TESTED; media not written yet.
+
+USB structural check PASS: expected device serial, GPT/FAT32, Ubuntu release identity and EFI/kernel/initrd/GRUB files present. Actual boot and hardware compatibility still NOT TESTED.

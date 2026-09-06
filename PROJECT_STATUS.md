@@ -45,3 +45,5 @@ Do not change robot/world/physics, use both arms, invent trial success, push Git
 User approved erasing external D: (32 GB USB, serial 121220160204) and declined backup. Installer download in progress; Rufus signed by Akeo Consulting prepared. No USB write yet. See docs/USB_PREPARATION.md. Internal-disk/boot changes remain outside this authorization.
 
 USB milestone: Ubuntu ISO complete and SHA256 verified. Rufus open, correct D: device observed. Elevated UI ignores automated clicks; user asked to select the prepared ISO. USB write and verification remain pending. Windows partitions unchanged.
+
+USB creation milestone: user completed Rufus write. D: identity rechecked; GPT/FAT32 and Ubuntu 22.04.5 AMD64 boot files verified. Next exact user action: boot USB through Windows Advanced startup > Use a device, then Try Ubuntu for compatibility test. Do not install/resize yet. Session will disconnect on reboot; progress is saved here.
