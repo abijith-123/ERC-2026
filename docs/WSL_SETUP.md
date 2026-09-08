@@ -55,10 +55,13 @@ docker exec -it erc_sim /entrypoint.sh bash -c 'source install/setup.bash && ros
 ```
 
 The team overlay is at `/opt/team_ws/install/setup.bash` inside the container.
-It currently provides camera preflight only, not autonomous navigation/grasping.
+It was rebuilt at submission ab7ea26 with live perception and a motion watchdog;
+autonomous navigation/grasp/delivery remain incomplete. Linux submission is now
+synchronized to ab7ea26. Launch from a writable submission copy, or specify a
+writable repository with ERC_OUTPUT_ROOT, because /opt/team_submission is read-only.
 Do not rerun official up.sh casually: it removes the container and omits the local
 override. The current simulator is left running, with log at
-`/home/biju123/erc2026/progress/current-simulation.log`.
+`/home/biju123/erc2026/progress/simulation-scene-02.log` (latest restart).
 
 Additional checks completed in temporary ROS Humble containers:
 

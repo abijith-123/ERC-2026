@@ -182,3 +182,27 @@ Active: scripts/scan_shelf.py is collecting live diagnostic images at head pitch
 -0.2 and closed-loop 45-degree clockwise steps; no ERC output topics published.
 Container dev copy is /opt/dev_submission; committed Linux submission clone is
 still a7dfe26 until next bundle sync. Windows submission is canonical for edits.
+
+## Live perception integration — 2026-09-08, active development
+Submission commit ab7ea26 is synchronized to the Linux submission clone. Added
+registered RGB/depth geometry, capture-time TF with buffered synchronization,
+generic-font marker recognition, metric book association, three-frame evidence,
+ERC column publication and an independent velocity watchdog. All 41 tests pass
+under ROS Humble/Python 3.10. Isolated ROS domain 91 watchdog tests passed command
+expiry, invalid-command rejection and stale-sensor stopping. Full delivery absent.
+
+A frontal live diagnostic correctly recognized all five labels and twenty books
+in the first scene. This is a development observation, not held-out accuracy.
+Integrated runs exposed TF timing and combined translation/rotation drift; fixes
+buffer one RGB frame and use angular-only feedback for search turns. A live turn
+reached its heading with steady odometry position. Earlier interrupted/failing
+runs saved incomplete results; no successful full trial exists.
+
+Official simulation was restarted normally for a new randomized scene. Current
+simulation launch PID 1927 (container), log ~/erc2026/progress/simulation-scene-02.log.
+Active solution launch PID 2792, log live-perception-trial-05.log, testing the
+corrected sweep from the normal start. Do not start duplicate motion controllers.
+Dev overlay /opt/dev_ws; persistent overlay /opt/team_ws rebuilt from synchronized
+read-only /opt/team_submission. Runtime dev output remains /opt/dev_submission;
+copy results/images out before container recreation. Prior results backed up to
+~/erc2026/progress/development-results. Row topic withheld until numbering clarified.

@@ -1,0 +1,39 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-08-19-15-36-834799-DESKTOP-TCVDJTQ-1471
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mission_controller-1]: process started with pid [1492]
+[mission_controller-1] [INFO] [1788894938.097939682] [mission_controller]: STATE:VALIDATING_REQUEST validated launch request and writable repository
+[mission_controller-1] [INFO] [1788894938.506847097] [mission_controller]: STATE:INITIAL_ORIENTATION fresh odometry, joint feedback and lasers
+[mission_controller-1] [INFO] [1788894938.507674089] [mission_controller]: STATE:SCANNING_SHELF_LABELS live RGB/depth registration and bounded visual sweep
+[mission_controller-1] [INFO] [1788894945.258648167] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 270.998000 but the latest data is at time 270.986000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788894947.311819722] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894949.479814089] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894951.483985490] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894953.224542207] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [INFO] [1788894963.020500859] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 273.142000 but the latest data is at time 273.136000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788894967.811186371] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894969.815408636] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894971.905670708] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 274.000000 but the latest data is at time 273.986000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788894973.698820690] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [INFO] [1788894979.706155881] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 275.386000 but the latest data is at time 275.372000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788894981.862728255] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894983.888681047] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788894986.037676858] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 276.376000 but the latest data is at time 276.360000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788894987.586400184] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [INFO] [1788895026.867546555] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 282.976000 but the latest data is at time 282.964000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788895028.925651669] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895030.987228646] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 283.670000 but the latest data is at time 283.666000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788895033.248073383] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895037.543020065] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [INFO] [1788895043.131893747] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 285.386000 but the latest data is at time 285.356000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788895045.162453691] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895047.234665147] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895049.357225970] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895051.051767609] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [INFO] [1788895056.991614628] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895059.111437398] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 288.190000 but the latest data is at time 288.164000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-1] [INFO] [1788895061.187443434] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895063.458037286] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-1] [INFO] [1788895064.860445911] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-1] [ERROR] [1788895169.149215469] [mission_controller]: TimeoutError:Base goal deadline exceeded
+[mission_controller-1] [WARN] [1788895169.307835891] [mission_controller]: TRIAL_NOT_COMPLETE:TimeoutError:Base goal deadline exceeded; result /opt/dev_submission/results/20260908T191537-45ca3b.json
+[ERROR] [mission_controller-1]: process has died [pid 1492, exit code 1, cmd '/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_e_sdya5b'].
