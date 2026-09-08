@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
-Updated 2026-09-08. Current phase: Windows-compatible solution foundations.
-STATUS: PASS for offline foundation milestone; ROS/Gazebo integration NOT RUN.
+Updated 2026-09-08. Current phase: Windows-compatible vision and alignment prototypes.
+STATUS: PASS for offline tests; full autonomous mission INCOMPLETE; ROS/Gazebo integration NOT RUN.
 
 ## Current authorization
 
@@ -45,7 +45,7 @@ No live trial metrics or competition evidence images exist. See docs/TEST_RESULT
 Audit root: C:\Users\Surface Laptop\OneDrive\Desktop\ERC
 Submission (SEPARATE Git repo): C:\Users\Surface Laptop\OneDrive\Desktop\ERC\submission
 Both branches: feature/erc-phase1-solution.
-Submission implementation commit: c534b2f (feat: add tested ERC mission foundations and camera preflight).
+Submission implementation commit: a7dfe26 (provisional vision and feedback alignment policies).
 Audit ignores /submission/ intentionally; back up BOTH repositories including .git.
 Submission has no remote and no push. Audit commit: use git log -1.
 Official baseline: official/erc_sim_2026 at v1.0.3 / 0a09806ecbade5edc9f8a148b7c9f439ed761554.
@@ -70,7 +70,7 @@ untested status for ROS/control integration and cannot claim competition points.
 ## Remaining blockers and unresolved matters
 
 Native Ubuntu/official simulator not running. ROS interfaces, QoS/TF/controllers,
-MoveIt/Nav2 setup and gripper behaviour unverified. Official #2 grasp issue was
+MoveIt/Nav2 setup and gripper behaviour unverified. Historical: official #2 grasp issue was
 open September 7 with an experimental September 6 patch, not established baseline.
 Row numbering direction still unresolved; helper requires explicit top-row number.
 Maintainer contact is placeholder; proprietary license is provisional, no public
@@ -78,3 +78,35 @@ license chosen. Deadline last verified on RIT page: September 15, 2026.
 
 Commands/results: docs/COMMANDS.md, docs/TEST_RESULTS.md. Evidence logs are in
 sources/windows-foundation-tests.txt and sources/windows-clean-clone-tests.txt.
+
+## Latest milestone — vision prototypes
+
+Added independent OpenCV digit candidates, scoped HSV book-color candidates,
+red-bin shape/metric-size proposals, registered-depth unprojection, consecutive
+frame stability, endian/padding-aware ROS image decoding and bounded feedback
+alignment policy. These are NOT yet wired to ROS scoring/motion. ROS entry remains
+read-only preflight. Automatic header/full-column geometry, live calibration,
+TF, planners and all manipulation/delivery integration remain pending.
+
+37 tests PASS in current tree and fresh local clone; wheel build/isolated CLI PASS.
+Logs: docs/sources/windows-vision-tests.txt and windows-vision-clean-clone-tests.txt.
+Development probe on flat official textures: 1–4 accepted correctly, 5 rejected
+because similarity gap from 3 was below threshold. Not held-out data or live
+accuracy; improving prototype stroke variants used these assets during development.
+No assets copied into submission, no fake competition evidence generated.
+
+OpenCV 4.10.0.84 installed locally in .tools/python-packages with --no-deps;
+bundled NumPy/Pillow used. Set PYTHONPATH to that directory for current Windows
+tests. Submission README documents standard venv installation via offline-vision
+extra; ROS package declares distro python3-opencv/python3-numpy dependencies.
+
+UPSTREAM UPDATE: official collaborator confirmed September 8 that gripper fix
+merged to main. Main SHA 93554d4f9335b2ee3acb49c6b332611f6ad2a964; latest release
+still v1.0.3. Saved docs/sources/official-main-20260908.json. Local official clone
+remains unchanged at v1.0.3. Next simulator setup must recheck and consider the
+organizer-approved main fix, not assume the older release includes it.
+
+NEXT: actual official simulator runtime and live images are needed to calibrate,
+integrate and verify the mission. scripts/capture_interfaces.py is prepared for
+read-only inventory inside the official container. USB/native OS work remains
+paused; do not treat broader coding request as permission for disk/boot changes.

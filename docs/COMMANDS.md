@@ -82,3 +82,14 @@ Use this as python below in the current Windows session.
 ROS docs website was blocked by its Anubis access gate; official checked-out package
 metadata and established Humble APIs informed the scaffold. Runtime validation is
 still mandatory; no attempt made to bypass the web gate.
+
+## Vision/alignment commands
+
+- python -m pip install --target .tools/python-packages --no-deps opencv-python-headless==4.10.0.84 : PASS; no simulator/system environment modified.
+- Set PYTHONPATH to .tools/python-packages, then python submission/scripts/test_offline.py : 37 PASS.
+- Local exploratory .tools/check_vision_assets.py reads official textures only and reports candidate classification; results saved, no image writes.
+- python -m pip wheel --no-deps --no-build-isolation --wheel-dir submission/aurak_erc_solution/dist submission/aurak_erc_solution : PASS.
+- python submission/scripts/check_wheel.py <wheel> : PASS.
+- git clone --no-hardlinks submission .tools/vision-validation-20260908; cloned scripts/test_offline.py : 37 PASS.
+- GitHub REST releases/latest, commits/main and issue 2 comments rechecked; gripper merge discovered September 8. Source snapshots saved.
+- scripts/capture_interfaces.py created but NOT RUN (requires real ROS environment).

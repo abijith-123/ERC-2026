@@ -49,3 +49,17 @@ subsequent pip wheel --no-deps --no-build-isolation succeeded.
 Logs: sources/windows-foundation-tests.txt, sources/windows-clean-clone-tests.txt.
 Source commit c534b2f in separate submission repository. Synthetic data exists only
 in auto-cleaned temporary directories, never in submission/erc_images or results.
+
+## Vision/alignment milestone
+
+37 offline tests PASS (Windows Python 3.12, NumPy, Pillow, OpenCV 4.10.0.84), also
+PASS in fresh local clone .tools/vision-validation-20260908. Wheel build and isolated
+CLI pass. Tests cover image encodings/stride/endianness, synthetic glyphs, color ROI
+exclusion, red hue wrap, invalid/median depth, bin-size proposals, temporal stability,
+alignment clamping/convergence/zero on failure. Source commit a7dfe26.
+
+Exploratory flat official texture probe: initial templates accepted 1–3, stroke
+variants accepted 1–4; 5 rejected as ambiguous with 3. These five development inputs
+are not held-out and not rendered camera images. No live detection accuracy claimed.
+Raw diagnostic: sources/official-texture-diagnostic.json. Logs: windows-vision-tests.txt
+and windows-vision-clean-clone-tests.txt. Full mission remains INCOMPLETE.

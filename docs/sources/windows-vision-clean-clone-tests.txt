@@ -1,0 +1,42 @@
+test_packaged_config (test_core.Configuration.test_packaged_config) ... ok
+test_unknown_keys_and_missing_file (test_core.Configuration.test_unknown_keys_and_missing_file) ... ok
+test_unsafe_values (test_core.Configuration.test_unsafe_values) ... ok
+test_path_traversal_and_bad_bbox (test_core.Evidence.test_path_traversal_and_bad_bbox) ... ok
+test_real_png_with_visible_annotation_and_unique_names (test_core.Evidence.test_real_png_with_visible_annotation_and_unique_names) ... ok
+test_stale_pretrial_bad_timestamps_and_closed_trial (test_core.Evidence.test_stale_pretrial_bad_timestamps_and_closed_trial) ... ok
+test_all_randomized_marker_permutations (test_core.Geometry.test_all_randomized_marker_permutations) ... ok
+test_duplicate_or_boolean_markers_rejected (test_core.Geometry.test_duplicate_or_boolean_markers_rejected) ... ok
+test_row_geometry_and_numbering (test_core.Geometry.test_row_geometry_and_numbering) ... ok
+test_no_false_success_or_nonfinite_measurements (test_core.Metrics.test_no_false_success_or_nonfinite_measurements) ... ok
+test_result_written_without_overwrite (test_core.Metrics.test_result_written_without_overwrite) ... ok
+test_summary_denominators_and_no_invented_zeros (test_core.Metrics.test_summary_denominators_and_no_invented_zeros) ... ok
+test_delivery_requires_explicit_evidence (test_core.MissionPolicy.test_delivery_requires_explicit_evidence) ... ok
+test_no_skipped_states_or_empty_evidence (test_core.MissionPolicy.test_no_skipped_states_or_empty_evidence) ... ok
+test_retry_cannot_rescue_expired_state (test_core.MissionPolicy.test_retry_cannot_rescue_expired_state) ... ok
+test_retry_limit_and_backward_clock (test_core.MissionPolicy.test_retry_limit_and_backward_clock) ... ok
+test_timeout_at_boundary_preserves_cause (test_core.MissionPolicy.test_timeout_at_boundary_preserves_cause) ... ok
+test_all_twenty_combinations (test_core.Requests.test_all_twenty_combinations) ... ok
+test_invalid_inputs (test_core.Requests.test_invalid_inputs) ... ok
+test_collision_contacts_not_frames (test_core.Safety.test_collision_contacts_not_frames) ... ok
+test_watchdog_stale_duplicate_future_and_clock_reset (test_core.Safety.test_watchdog_stale_duplicate_future_and_clock_reset) ... ok
+test_bad_length_encoding_and_stride_rejected (test_image_messages.ImageMessages.test_bad_length_encoding_and_stride_rejected) ... ok
+test_depth_endianness_and_nan_preserved (test_image_messages.ImageMessages.test_depth_endianness_and_nan_preserved) ... ok
+test_rgb_padding_is_not_pixel_data (test_image_messages.ImageMessages.test_rgb_padding_is_not_pixel_data) ... ok
+test_exact_required_arguments_without_defaults (test_launch_contract.LaunchContract.test_exact_required_arguments_without_defaults) ... ok
+test_ros_dependencies_and_python310_syntax (test_launch_contract.LaunchContract.test_ros_dependencies_and_python310_syntax) ... ok
+test_all_failure_paths_stop (test_vision.AlignmentPolicy.test_all_failure_paths_stop) ... ok
+test_clamping_and_convergence_stop (test_vision.AlignmentPolicy.test_clamping_and_convergence_stop) ... ok
+test_repeated_frame_not_success_and_bad_config (test_vision.AlignmentPolicy.test_repeated_frame_not_success_and_bad_config) ... ok
+test_all_colours_scoped_to_selected_column (test_vision.ColourDepth.test_all_colours_scoped_to_selected_column) ... ok
+test_bin_rejects_book_size_and_invalid_depth (test_vision.ColourDepth.test_bin_rejects_book_size_and_invalid_depth) ... ok
+test_depth_median_projection_and_invalid_support (test_vision.ColourDepth.test_depth_median_projection_and_invalid_support) ... ok
+test_red_wrap_and_grey_rejection (test_vision.ColourDepth.test_red_wrap_and_grey_rejection) ... ok
+test_blank_noise_unknown_and_ambiguous_targets (test_vision.Digits.test_blank_noise_unknown_and_ambiguous_targets) ... ok
+test_read_glyphs_not_requested_input (test_vision.Digits.test_read_glyphs_not_requested_input) ... ok
+test_consecutive_distinct_overlapping_frames (test_vision.Stability.test_consecutive_distinct_overlapping_frames) ... ok
+test_target_jump_and_long_gap_reset (test_vision.Stability.test_target_jump_and_long_gap_reset) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.249s
+
+OK

@@ -75,3 +75,14 @@ Use aurak_erc_solution; separate perception, navigation, manipulation, safety an
 [SaberFaceLove](https://github.com/SaberFaceLove/erc-competition-2026) package, launch, solution and tree inspected; cloned separately. No LICENSE in tree; package license TODO, API license unspecified. No substantial reuse permitted on current evidence.
 
 Confirmed flaws: column method publishes requested number without digit recognition; timed driving; row derived from image-height quarters rather than shelf geometry; color search lacks target-column restriction; gripper closes without an arm grasp; fixed absolute evidence path; timestamp only in filename; unconditional completion; blocking sleeps/stale image risks. Its photos are not our evidence. Use only for interface discovery and independently implement.
+
+## September 8 official update — supersedes older pending-merge note
+
+At 2026-09-08T09:36:51Z, the official collaborator in issue #2 states the grasp fix
+was tested and merged to main. API main now resolves to
+93554d4f9335b2ee3acb49c6b332611f6ad2a964 (PR #6, September 8 09:34:09Z), increasing
+gripper/book friction and reducing spine width to 2 cm. Latest tagged release
+remains v1.0.3. Local v1.0.3 clone unchanged. Before simulator setup, use current
+organizer guidance for baseline selection; do not assume release/main equivalent.
+Source: https://github.com/dfl-rlab/erc_sim_2026/issues/2
+This is an organizer report, not a grasp test performed by our team.

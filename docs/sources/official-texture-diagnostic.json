@@ -1,0 +1,42 @@
+{
+  "evaluation": "RAW_OFFICIAL_TEXTURES_NOT_LIVE_CAMERA",
+  "results": [
+    {
+      "asset_label": "1",
+      "prediction": [
+        "1",
+        0.816
+      ],
+      "correct": true
+    },
+    {
+      "asset_label": "2",
+      "prediction": [
+        "2",
+        0.6899128268991283
+      ],
+      "correct": true
+    },
+    {
+      "asset_label": "3",
+      "prediction": [
+        "3",
+        0.8002645502645502
+      ],
+      "correct": true
+    },
+    {
+      "asset_label": "4",
+      "prediction": [
+        "4",
+        0.6237373737373737
+      ],
+      "correct": true
+    },
+    {
+      "asset_label": "5",
+      "prediction": null,
+      "correct": false
+    }
+  ]
+}
