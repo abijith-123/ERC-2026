@@ -1,0 +1,73 @@
+{
+  "captured_utc": "2026-09-08T18:40:33.242345+00:00",
+  "commands": {
+    "topics": {
+      "command": [
+        "ros2",
+        "topic",
+        "list",
+        "-t"
+      ],
+      "exit_code": 0
+    },
+    "nodes": {
+      "command": [
+        "ros2",
+        "node",
+        "list"
+      ],
+      "exit_code": 0
+    },
+    "services": {
+      "command": [
+        "ros2",
+        "service",
+        "list",
+        "-t"
+      ],
+      "exit_code": 0
+    },
+    "actions": {
+      "command": [
+        "ros2",
+        "action",
+        "list",
+        "-t"
+      ],
+      "exit_code": 0
+    },
+    "controllers": {
+      "command": [
+        "ros2",
+        "control",
+        "list_controllers"
+      ],
+      "exit_code": 0
+    },
+    "hardware": {
+      "command": [
+        "ros2",
+        "control",
+        "list_hardware_interfaces"
+      ],
+      "exit_code": 0
+    },
+    "parameters": {
+      "command": [
+        "ros2",
+        "param",
+        "list"
+      ],
+      "exit_code": 0
+    },
+    "tf": {
+      "command": [
+        "ros2",
+        "run",
+        "tf2_tools",
+        "view_frames"
+      ],
+      "exit_code": 0
+    }
+  }
+}

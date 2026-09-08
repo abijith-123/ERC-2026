@@ -145,3 +145,24 @@ gripper fix), submission clone a7dfe26 transferred by Git bundle. Official
 ./docker/up.sh --build is RUNNING, log at
 /home/biju123/erc2026/progress/simulator-build.log. Do not start a duplicate build.
 Container graphics, colcon, live simulator and mission preflight still pending.
+
+## COMPLETE: WSL simulator setup milestone
+Official Docker build succeeded. All 32 official packages compiled. Team package
+also compiled and installed in separate /opt/team_ws overlay. All 37 offline tests
+passed under actual Python 3.10/ROS Humble. Absent-camera launch correctly failed;
+live simulation launch produced CAMERA_READY. Camera diagnostic was 640x360 rgb8;
+no target recognition or competition success claimed. All seven controllers active.
+Eight read-only interface inventory commands passed (docs/sources/wsl-first-inventory).
+
+Current container erc_sim and official GUI simulation are RUNNING. Current log:
+/home/biju123/erc2026/progress/current-simulation.log. Do not start a duplicate.
+Read docs/WSL_SETUP.md before restarting; a local Compose override now preserves
+build/install/team workspace folders across recreation. Official simulator source
+remains unmodified at organizer main 93554d4. Windows submission and Linux clone
+remain a7dfe26; no code changes were required during setup.
+
+Performance limitation: final software-rendering factor 0.218 (about 4.6 wall
+seconds per simulated second). Intel D3D12 rendering was enabled and verified but
+was slower in short diagnostics (0.076); software restored. No physics/sensor-rate
+changes made. NEXT: investigate performance and integrate actual live perception,
+navigation, single-arm grasp/delivery. Current solution is still preflight-only.

@@ -1,0 +1,17 @@
+/arm_left_controller
+/arm_right_controller
+/contact_bridge
+/controller_manager
+/depth_to_cloud
+/gripper_command_clamp
+/gripper_left_controller_raw
+/gripper_right_controller_raw
+/gz_ros2_control
+/head_camera_bridge
+/head_controller
+/joint_state_broadcaster
+/robot_state_publisher
+/ros_gz_bridge
+/torso_controller
+
+STDERR:

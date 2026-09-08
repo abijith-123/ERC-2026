@@ -1,0 +1,16 @@
+# Local host integration only; official robot/world/physics sources are unchanged.
+# Layer after the organizer's docker/docker-compose.yml.
+services:
+  erc:
+    environment:
+      LD_LIBRARY_PATH: /usr/lib/wsl/lib
+      # D3D12 was functional but slower in this host's initial measurements.
+      # Retain library access for future testing; use software rendering for now.
+      GALLIUM_DRIVER: llvmpipe
+      LIBGL_ALWAYS_SOFTWARE: "true"
+    volumes:
+      - /usr/lib/wsl:/usr/lib/wsl:ro
+      - /home/biju123/erc2026/runtime/build:/opt/erc_ws/build
+      - /home/biju123/erc2026/runtime/install:/opt/erc_ws/install
+      - /home/biju123/erc2026/runtime/team_ws:/opt/team_ws
+      - /home/biju123/erc2026/submission:/opt/team_submission:ro

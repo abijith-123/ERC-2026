@@ -1,0 +1,8 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-08-18-40-55-248061-DESKTOP-TCVDJTQ-4753
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mission_controller-1]: process started with pid [4754]
+[mission_controller-1] [WARN] [1788892855.732635099] [mission_controller]: PREFLIGHT_ONLY: autonomous perception and motion are not implemented
+[mission_controller-1] [INFO] [1788892855.736182735] [mission_controller]: CAMERA_READY: fresh live image received; no target detection claimed
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [mission_controller-1]: sending signal 'SIGINT' to process[mission_controller-1]
+[ERROR] [mission_controller-1]: process has died [pid 4754, exit code 130, cmd '/opt/team_ws/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_hgfk6mf2'].

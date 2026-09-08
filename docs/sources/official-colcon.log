@@ -1,0 +1,66 @@
+Starting >>> launch_pal
+Starting >>> pal_urdf_utils
+Finished <<< launch_pal [1.04s]
+Starting >>> pal_pro_gripper_wrapper
+Finished <<< pal_urdf_utils [1.49s]
+Starting >>> pal_pro_gripper_description
+Finished <<< pal_pro_gripper_wrapper [1.02s]
+Starting >>> pal_pro_gripper_controller_configuration
+Finished <<< pal_pro_gripper_description [1.13s]
+Starting >>> tiago_pro_head_controller_configuration
+Finished <<< pal_pro_gripper_controller_configuration [0.71s]
+Starting >>> pal_sea_arm_controller_configuration
+Finished <<< tiago_pro_head_controller_configuration [0.70s]
+Starting >>> tiago_pro_head_description
+Finished <<< pal_sea_arm_controller_configuration [0.91s]
+Starting >>> omni_base_controller_configuration
+Finished <<< omni_base_controller_configuration [0.81s]
+Starting >>> omni_base_description
+Finished <<< tiago_pro_head_description [1.71s]
+Starting >>> pal_sea_arm_description
+Finished <<< omni_base_description [1.78s]
+Starting >>> tiago_pro_head_bringup
+Finished <<< tiago_pro_head_bringup [0.74s]
+Starting >>> pal_gripper_controller_configuration
+Finished <<< pal_sea_arm_description [2.33s]
+Starting >>> pal_gripper_description
+Finished <<< pal_gripper_controller_configuration [0.83s]
+Starting >>> tiago_pro_controller_configuration
+Finished <<< pal_gripper_description [0.92s]
+Starting >>> tiago_pro_description
+Finished <<< tiago_pro_controller_configuration [1.59s]
+Starting >>> omni_base_bringup
+Finished <<< tiago_pro_description [1.66s]
+Starting >>> pal_sea_arm_bringup
+Finished <<< omni_base_bringup [0.77s]
+Starting >>> tiago_pro_bringup
+Finished <<< pal_sea_arm_bringup [0.75s]
+Starting >>> erc_description
+Finished <<< tiago_pro_bringup [1.33s]
+Starting >>> gz_ros2_control
+Finished <<< erc_description [0.96s]
+Starting >>> sensors
+Finished <<< sensors [1.15s]
+Starting >>> pal_gripper
+Finished <<< pal_gripper [0.80s]
+Starting >>> pal_gripper_simulation
+Finished <<< pal_gripper_simulation [0.87s]
+Starting >>> pal_pro_gripper
+Finished <<< pal_pro_gripper [0.81s]
+Starting >>> pal_pro_gripper_bringup
+Finished <<< pal_pro_gripper_bringup [0.88s]
+Starting >>> pal_pro_gripper_simulation
+Finished <<< pal_pro_gripper_simulation [0.94s]
+Starting >>> omni_base_robot
+Finished <<< omni_base_robot [0.94s]
+Starting >>> tiago_pro_head_robot
+Finished <<< tiago_pro_head_robot [0.92s]
+Starting >>> erc_bringup
+Finished <<< erc_bringup [0.90s]
+Starting >>> pal_sea_arm
+Finished <<< pal_sea_arm [0.81s]
+Starting >>> tiago_pro_robot
+Finished <<< tiago_pro_robot [0.86s]
+Finished <<< gz_ros2_control [16.2s]
+
+Summary: 32 packages finished [28.0s]

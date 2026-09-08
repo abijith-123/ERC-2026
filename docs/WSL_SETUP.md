@@ -17,8 +17,48 @@ Verified on 2026-09-08, Windows 11 Surface Laptop 4.
 - Build log: `/home/biju123/erc2026/progress/simulator-build.log`.
 
 Docker installation followed https://docs.docker.com/engine/install/ubuntu/ .
-The official `docker/up.sh --build` was launched unchanged. Build completion,
-container graphics, colcon and live simulator checks remain pending.
+The official `docker/up.sh --build` completed successfully. All 32 official
+packages compiled with `colcon build --symlink-install --parallel-workers 2`.
+The official GUI simulation launched and the team's separate overlay package
+received fresh camera frames (`CAMERA_READY`). Seven controllers were active.
+Read-only inventory of topics, nodes, services, actions, hardware, controllers,
+parameters and TF completed with all eight command exit codes zero.
+
+## Graphics and persistent runtime
+
+The unchanged Docker configuration used llvmpipe software rendering. A 12-second
+sample measured real-time factor 0.224. Exposing `/usr/lib/wsl` read-only and
+selecting d3d12 enabled Intel Iris Xe rendering, but measured factors were 0.086
+and 0.076. These short runs used independently randomized layouts, so they are
+diagnostic measurements rather than a controlled benchmark. Software mode was
+restored because it performed better in these checks. Real-time performance
+is NOT achieved; further host/rendering optimization remains open.
+
+Local host override: `wsl/docker-compose.wsl.yml`, copied to
+`/home/biju123/erc2026/runtime/docker-compose.wsl.yml`. It keeps compiled official
+build/install and the team overlay in persistent host folders and exposes the
+team submission read-only. Robot/world/physics source was not modified. Original
+container was recreated after preserving compiled artifacts; temporary root
+filesystem diagnostics were copied out as needed. No user files were deleted.
+
+Use this in Ubuntu to start the configured container without rebuilding:
+
+```bash
+cd ~/erc2026/official/erc_sim_2026/docker
+docker compose -f docker-compose.yml -f ~/erc2026/runtime/docker-compose.wsl.yml up -d --no-build
+```
+
+Start the simulator only if no simulation is already running:
+
+```bash
+docker exec -it erc_sim /entrypoint.sh bash -c 'source install/setup.bash && ros2 launch erc_bringup simulation.launch.py'
+```
+
+The team overlay is at `/opt/team_ws/install/setup.bash` inside the container.
+It currently provides camera preflight only, not autonomous navigation/grasping.
+Do not rerun official up.sh casually: it removes the container and omits the local
+override. The current simulator is left running, with log at
+`/home/biju123/erc2026/progress/current-simulation.log`.
 
 Additional checks completed in temporary ROS Humble containers:
 
