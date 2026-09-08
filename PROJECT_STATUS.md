@@ -135,3 +135,13 @@ WSLg socket and /dev/dxg exist; /dev/dri absent. Graphics not yet tested.
 Normal Linux user UID 1000 not created yet; first-launch setup is next, requiring
 the user to choose their local username/password. Docker and simulator remain
 uninstalled in WSL. Do not claim runtime ROS/Gazebo validation.
+
+User completed account setup: default user biju123 (UID 1000). Docker Engine
+29.8.0 and Compose 5.5.1 installed from official Docker apt repository; user in
+docker group. hello-world container passed. Host glxinfo confirms accelerated
+D3D12 Intel Iris Xe OpenGL 4.1. See docs/WSL_SETUP.md for paths and limitations.
+Official simulator clone in Linux pinned to organizer main 93554d4 (merged
+gripper fix), submission clone a7dfe26 transferred by Git bundle. Official
+./docker/up.sh --build is RUNNING, log at
+/home/biju123/erc2026/progress/simulator-build.log. Do not start a duplicate build.
+Container graphics, colcon, live simulator and mission preflight still pending.
