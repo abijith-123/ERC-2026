@@ -11,3 +11,6 @@
 - Linux layout: ~/erc2026/official/erc_sim_2026; ~/erc2026/references/SaberFaceLove-erc-competition-2026; ~/erc2026/submission; ~/erc2026/evidence; ~/erc2026/progress for this audit.
 - Clean submission will contain our packages, package.xml dependencies, README, solution.launch.py and erc_images; no reference checkout dependency. Final colcon nesting follows integration testing.
 - No GitHub push, public repository or organizer message authorized/performed.
+
+## 2026-09-08 scope update
+User paused USB/native Ubuntu work and explicitly approved Windows-compatible development. This supersedes the earlier no-coding-on-Windows checkpoint. Develop and test pure logic and package scaffolding now; runtime ROS/Gazebo validation remains mandatory before claiming robot features work. No WSL installation, disk changes or simulator environment modification implied.

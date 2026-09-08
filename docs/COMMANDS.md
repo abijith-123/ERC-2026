@@ -60,3 +60,25 @@ For subsequent terminals use attach.sh only. up.sh stops/removes the existing er
 Final checks: nine required documents exist/nonempty; PDF SHA256 matches; official/reference git status clean. Local audit commit uses explicit agent identity Codex <codex@localhost> for this command only because user.name/email were not configured; no global identity changes.
 
 USB preparation: curl.exe downloaded Canonical Ubuntu 22.04.5 desktop AMD64 ISO and SHA256SUMS; Get-FileHash match PASS. Rufus 4.15p downloaded from pbatard release, Get-AuthenticodeSignature Valid. Start-Process opened signed Rufus; user handled UAC. Read-only D: disk identity: USB Disk 1, 31,914,983,424 bytes, serial 121220160204. No erase command issued.
+
+## 2026-09-08 foundation commands
+
+Bundled Python path: C:\Users\Surface Laptop\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+Use this as python below in the current Windows session.
+
+- python -c module probe: Python 3.12.14, Pillow/numpy/setuptools/wheel present;
+  pytest/PyYAML/OpenCV absent. Initial import pytest failed; used unittest instead.
+- python submission/scripts/test_offline.py: 23 tests PASS after path fix.
+- In submission/aurak_erc_solution: python -m pip wheel --no-deps --no-build-isolation --wheel-dir dist . : PASS.
+- python submission/scripts/check_wheel.py submission/aurak_erc_solution/dist/aurak_erc_solution-0.1.0-py3-none-any.whl : PASS.
+- Set PYTHONPATH to submission/aurak_erc_solution for module CLI:
+  python -m aurak_erc_solution.offline validate --column 2 --colour red --config submission/aurak_erc_solution/config/mission.yaml : PASS.
+  python -m aurak_erc_solution.offline summarize submission/results : zero trials, null rates.
+- git -C submission init -b feature/erc-phase1-solution; add; diff --cached --check;
+  commit c534b2f using per-command agent identity Codex <codex@localhost>.
+- git clone --no-hardlinks submission .tools/submission-validation-20260908.
+- python .tools/submission-validation-20260908/scripts/test_offline.py: 23 PASS.
+
+ROS docs website was blocked by its Anubis access gate; official checked-out package
+metadata and established Humble APIs informed the scaffold. Runtime validation is
+still mandatory; no attempt made to bypass the web gate.

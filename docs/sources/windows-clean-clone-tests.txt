@@ -1,0 +1,28 @@
+test_packaged_config (test_core.Configuration.test_packaged_config) ... ok
+test_unknown_keys_and_missing_file (test_core.Configuration.test_unknown_keys_and_missing_file) ... ok
+test_unsafe_values (test_core.Configuration.test_unsafe_values) ... ok
+test_path_traversal_and_bad_bbox (test_core.Evidence.test_path_traversal_and_bad_bbox) ... ok
+test_real_png_with_visible_annotation_and_unique_names (test_core.Evidence.test_real_png_with_visible_annotation_and_unique_names) ... ok
+test_stale_pretrial_bad_timestamps_and_closed_trial (test_core.Evidence.test_stale_pretrial_bad_timestamps_and_closed_trial) ... ok
+test_all_randomized_marker_permutations (test_core.Geometry.test_all_randomized_marker_permutations) ... ok
+test_duplicate_or_boolean_markers_rejected (test_core.Geometry.test_duplicate_or_boolean_markers_rejected) ... ok
+test_row_geometry_and_numbering (test_core.Geometry.test_row_geometry_and_numbering) ... ok
+test_no_false_success_or_nonfinite_measurements (test_core.Metrics.test_no_false_success_or_nonfinite_measurements) ... ok
+test_result_written_without_overwrite (test_core.Metrics.test_result_written_without_overwrite) ... ok
+test_summary_denominators_and_no_invented_zeros (test_core.Metrics.test_summary_denominators_and_no_invented_zeros) ... ok
+test_delivery_requires_explicit_evidence (test_core.MissionPolicy.test_delivery_requires_explicit_evidence) ... ok
+test_no_skipped_states_or_empty_evidence (test_core.MissionPolicy.test_no_skipped_states_or_empty_evidence) ... ok
+test_retry_cannot_rescue_expired_state (test_core.MissionPolicy.test_retry_cannot_rescue_expired_state) ... ok
+test_retry_limit_and_backward_clock (test_core.MissionPolicy.test_retry_limit_and_backward_clock) ... ok
+test_timeout_at_boundary_preserves_cause (test_core.MissionPolicy.test_timeout_at_boundary_preserves_cause) ... ok
+test_all_twenty_combinations (test_core.Requests.test_all_twenty_combinations) ... ok
+test_invalid_inputs (test_core.Requests.test_invalid_inputs) ... ok
+test_collision_contacts_not_frames (test_core.Safety.test_collision_contacts_not_frames) ... ok
+test_watchdog_stale_duplicate_future_and_clock_reset (test_core.Safety.test_watchdog_stale_duplicate_future_and_clock_reset) ... ok
+test_exact_required_arguments_without_defaults (test_launch_contract.LaunchContract.test_exact_required_arguments_without_defaults) ... ok
+test_ros_dependencies_and_python310_syntax (test_launch_contract.LaunchContract.test_ros_dependencies_and_python310_syntax) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.186s
+
+OK
