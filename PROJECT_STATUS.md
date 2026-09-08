@@ -110,3 +110,5 @@ NEXT: actual official simulator runtime and live images are needed to calibrate,
 integrate and verify the mission. scripts/capture_interfaces.py is prepared for
 read-only inventory inside the official container. USB/native OS work remains
 paused; do not treat broader coding request as permission for disk/boot changes.
+
+USB setup resumed at user request: same device D:, serial 121220160204, Ubuntu 22.04.5 boot files reverified. Windows recovery-status query requires elevation (reagentc error 5). Recovery settings opened for manual Advanced startup. Do not alter partitions or install before live compatibility checks and backup/BitLocker prerequisites.
