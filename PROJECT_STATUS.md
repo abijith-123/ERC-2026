@@ -122,3 +122,16 @@ installation explicitly requires a Windows reboot. `wsl --list --verbose` confir
 no distributions installed yet. NEXT: user saves work and performs a normal
 Windows Restart; then verify WSL and install Ubuntu-22.04 with --no-launch.
 Do not repeat the completed WSL platform installer or use USB boot for this step.
+
+## WSL2 and Ubuntu installed — 2026-09-08
+Windows reboot verified (22:08:47 +04). Automatic distro downloads stalled with
+a zero-byte temporary image; cancelled both before a direct IPv4 Canonical download.
+Image ubuntu-22.04.5-wsl-amd64.wsl (360684292 bytes) SHA256
+4499c4fe257f2fc83145b429ce211a0a43fd590e70d6261ede616210947d9f8f matched
+Microsoft/WSL distributions/DistributionInfo.json. Installed with --from-file,
+--name Ubuntu-22.04 and --no-launch. Ubuntu 22.04.5 starts successfully with kernel
+6.18.33.2-microsoft-standard-WSL2; distro list confirms version 2. systemd PID 1,
+WSLg socket and /dev/dxg exist; /dev/dri absent. Graphics not yet tested.
+Normal Linux user UID 1000 not created yet; first-launch setup is next, requiring
+the user to choose their local username/password. Docker and simulator remain
+uninstalled in WSL. Do not claim runtime ROS/Gazebo validation.
