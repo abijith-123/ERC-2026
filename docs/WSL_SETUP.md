@@ -20,6 +20,17 @@ Docker installation followed https://docs.docker.com/engine/install/ubuntu/ .
 The official `docker/up.sh --build` was launched unchanged. Build completion,
 container graphics, colcon and live simulator checks remain pending.
 
+Additional checks completed in temporary ROS Humble containers:
+
+- ROS base image digest: `sha256:b624d8bcea33796d32e0dbd85326722188485759bbd6b538e4785750a5c88a7b`.
+- Python 3.10.12, NumPy 1.21.5, OpenCV 4.5.4, Pillow 9.0.1.
+- All 37 offline tests passed; log `sources/linux-offline-tests.log`.
+- Submission package built and installed with colcon. Installed launch exposes
+  exactly shelf_column_number and book_colour. With no camera or simulation
+  clock, its node reports PREFLIGHT_FAILED and exits with code 1 within the
+  bounded check. Log `sources/ros-package-check.log`.
+- No simulator was launched by these tests, and no competition evidence was made.
+
 Open Ubuntu from Windows with `wsl.exe -d Ubuntu-22.04`.
 First-use account creation is complete. No additional restart is currently needed.
 

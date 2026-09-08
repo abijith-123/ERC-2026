@@ -1,0 +1,91 @@
+Starting >>> aurak_erc_solution
+running egg_info
+creating ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info
+writing ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/PKG-INFO
+writing dependency_links to ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/dependency_links.txt
+writing entry points to ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/entry_points.txt
+writing requirements to ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/requires.txt
+writing top-level names to ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/top_level.txt
+writing manifest file '../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/SOURCES.txt'
+reading manifest file '../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/SOURCES.txt'
+writing manifest file '../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /tmp/erc-package-check/build/aurak_erc_solution/build
+creating /tmp/erc-package-check/build/aurak_erc_solution/build/lib
+creating /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/image_messages.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/perception_geometry.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/metrics.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/request.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/alignment.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/safety.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/mission_controller.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/vision.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/__init__.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/mission.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/evidence.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/offline.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+copying aurak_erc_solution/config.py -> /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution
+running install
+running install_lib
+creating /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/image_messages.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/perception_geometry.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/metrics.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/request.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/alignment.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/safety.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/mission_controller.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/vision.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/__init__.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/mission.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/evidence.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/offline.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+copying /tmp/erc-package-check/build/aurak_erc_solution/build/lib/aurak_erc_solution/config.py -> /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/image_messages.py to image_messages.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/perception_geometry.py to perception_geometry.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/metrics.py to metrics.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/request.py to request.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/alignment.py to alignment.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/safety.py to safety.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/mission_controller.py to mission_controller.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/vision.py to vision.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/__init__.py to __init__.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/mission.py to mission.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/evidence.py to evidence.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/offline.py to offline.cpython-310.pyc
+byte-compiling /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/config.py to config.cpython-310.pyc
+running install_data
+creating /tmp/erc-package-check/install/aurak_erc_solution/share/ament_index
+creating /tmp/erc-package-check/install/aurak_erc_solution/share/ament_index/resource_index
+creating /tmp/erc-package-check/install/aurak_erc_solution/share/ament_index/resource_index/packages
+copying resource/aurak_erc_solution -> /tmp/erc-package-check/install/aurak_erc_solution/share/ament_index/resource_index/packages
+copying package.xml -> /tmp/erc-package-check/install/aurak_erc_solution/share/aurak_erc_solution
+creating /tmp/erc-package-check/install/aurak_erc_solution/share/aurak_erc_solution/launch
+copying launch/solution.launch.py -> /tmp/erc-package-check/install/aurak_erc_solution/share/aurak_erc_solution/launch
+creating /tmp/erc-package-check/install/aurak_erc_solution/share/aurak_erc_solution/config
+copying config/mission.yaml -> /tmp/erc-package-check/install/aurak_erc_solution/share/aurak_erc_solution/config
+running install_egg_info
+Copying ../../tmp/erc-package-check/build/aurak_erc_solution/aurak_erc_solution.egg-info to /tmp/erc-package-check/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution-0.1.0-py3.10.egg-info
+running install_scripts
+Installing erc_offline script to /tmp/erc-package-check/install/aurak_erc_solution/lib/aurak_erc_solution
+Installing mission_controller script to /tmp/erc-package-check/install/aurak_erc_solution/lib/aurak_erc_solution
+writing list of installed files to '/tmp/erc-package-check/build/aurak_erc_solution/install.log'
+Finished <<< aurak_erc_solution [0.72s]
+
+Summary: 1 package finished [0.93s]
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'shelf_column_number':
+        Observed target marker label, 1–5
+
+    'book_colour':
+        red, blue, green or yellow
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-08-18-34-08-163996-a7325885d8bd-45
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mission_controller-1]: process started with pid [46]
+[mission_controller-1] [WARN] [1788892448.459583306] [mission_controller]: PREFLIGHT_ONLY: autonomous perception and motion are not implemented
+[mission_controller-1] [ERROR] [1788892470.765029051] [mission_controller]: PREFLIGHT_FAILED:camera_unavailable_or_no_fresh_sim_time
+[ERROR] [mission_controller-1]: process has died [pid 46, exit code 1, cmd '/tmp/erc-package-check/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_x3nf4ls3'].
+PASS: installed ROS launch rejects absent camera/simulation clock
