@@ -1,0 +1,16 @@
+{"start_pose": [-0.00311549828361588, 7.124948950243986e-06, 0.00013395050298692712], "scan_min_base": 0.7410479083570997}
+{"test": "forward", "pose": [0.08494517236421398, 1.8920720023152454e-05, 0.00013395050298990892]}
+{"test": "back", "pose": [-0.0028696427055576543, 7.157881275836008e-06, 0.00013395050297353698]}
+{"test": "strafe_left", "pose": [-0.0030865901465572994, 0.08809333707765145, 0.00013395050660075953]}
+{"test": "strafe_right", "pose": [-0.003074797562486729, 8.195622754139158e-05, 0.0001339505060712842]}
+{"test": "rotate", "pose": [-0.0014847436960888829, -0.008685606867148468, 0.18013396292410988]}
+{"test": "rotate_back", "pose": [-0.0014794052917314225, -0.008714460345005651, 1.7843969812172055e-05]}
+{"controller": "head_controller", "feedback": {"head_1_joint": 0.1478129999950576, "head_2_joint": -7.973893992137606e-13}}
+{"controller": "head_controller", "feedback": {"head_1_joint": 0.0026645706048842943, "head_2_joint": -7.650908139664496e-13}}
+{"controller": "torso_controller", "feedback": {"torso_lift_joint": 0.029279999997884585}}
+{"controller": "torso_controller", "feedback": {"torso_lift_joint": 0.0005291999981483705}}
+{"controller": "arm_right_controller", "feedback": {"arm_right_1_joint": 0.04918999996924718, "arm_right_2_joint": 7.34216344387241e-08, "arm_right_3_joint": 2.4010545145777153e-14, "arm_right_4_joint": -1.218015577714845e-07, "arm_right_5_joint": 5.8521988814671935e-12, "arm_right_6_joint": 4.464900449731413e-12, "arm_right_7_joint": 3.238824204491773e-14}}
+{"controller": "arm_right_controller", "feedback": {"arm_right_1_joint": 0.0008868780379566665, "arm_right_2_joint": 1.178593734011913e-09, "arm_right_3_joint": -1.2825417023779392e-12, "arm_right_4_joint": -1.959909304146561e-09, "arm_right_5_joint": 4.9458932252930335e-12, "arm_right_6_joint": 4.773994755437428e-12, "arm_right_7_joint": 2.2533185406003592e-13}}
+{"controller": "gripper_right_controller", "feedback": {"gripper_right_finger_joint": 0.03920004537707459}}
+{"controller": "gripper_right_controller", "feedback": {"gripper_right_finger_joint": 0.0008641608988450151}}
+BASELINE_PASS: base/head/torso/right-arm/gripper feedback verified; no grasp claimed

@@ -166,3 +166,19 @@ seconds per simulated second). Intel D3D12 rendering was enabled and verified bu
 was slower in short diagnostics (0.076); software restored. No physics/sensor-rate
 changes made. NEXT: investigate performance and integrate actual live perception,
 navigation, single-arm grasp/delivery. Current solution is still preflight-only.
+
+## PASS: conservative robot baseline — 2026-09-08
+Added RobotIO feedback primitives and scripts/verify_robot.py in submission.
+Live baseline passed forward/back 0.10 m, strafe left/right 0.10 m, rotate/back
+0.20 rad, head 0.15 rad/back, torso 0.03 m/back, right arm joint 1 0.05 rad/back,
+public right gripper 0.04 m open/back closed. All endpoints checked using odometry
+or joint states; zero base command sent in finally. Right arm is the provisional
+tested arm, reachability and grasp still unverified. Saved baseline-motion.log.
+RGB/depth/calibration/both lasers/odom/joints passed timestamp freshness checks.
+Baseline initial laser clearance 0.741 m in base frame. All 37 existing tests pass
+inside ROS. RobotIO arm limits are intentionally narrow baseline limits; do not
+treat it as a full manipulation planner.
+Active: scripts/scan_shelf.py is collecting live diagnostic images at head pitch
+-0.2 and closed-loop 45-degree clockwise steps; no ERC output topics published.
+Container dev copy is /opt/dev_submission; committed Linux submission clone is
+still a7dfe26 until next bundle sync. Windows submission is canonical for edits.
