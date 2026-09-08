@@ -112,3 +112,13 @@ read-only inventory inside the official container. USB/native OS work remains
 paused; do not treat broader coding request as permission for disk/boot changes.
 
 USB setup resumed at user request: same device D:, serial 121220160204, Ubuntu 22.04.5 boot files reverified. Windows recovery-status query requires elevation (reagentc error 5). Recovery settings opened for manual Advanced startup. Do not alter partitions or install before live compatibility checks and backup/BitLocker prerequisites.
+
+## ACTIVE: WSL2 setup
+User explicitly authorized WSL2. Initial wsl --status/list/version say not installed; unprivileged install failed. Elevated Windows PowerShell installer started for wsl --install -d Ubuntu-22.04 --no-launch. Logs/result at .tools/wsl/install.log and result.json. Check these before retrying. No distro success claimed yet; reboot may be needed.
+
+Installer completed successfully (exit 0, 2026-09-08 22:05 +04). WSL version
+2.7.13.0, kernel 6.18.33.2-2 and WSLg 1.0.73.2 verified. VirtualMachinePlatform
+installation explicitly requires a Windows reboot. `wsl --list --verbose` confirms
+no distributions installed yet. NEXT: user saves work and performs a normal
+Windows Restart; then verify WSL and install Ubuntu-22.04 with --no-launch.
+Do not repeat the completed WSL platform installer or use USB boot for this step.

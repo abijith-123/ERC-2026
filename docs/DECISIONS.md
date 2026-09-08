@@ -14,3 +14,6 @@
 
 ## 2026-09-08 scope update
 User paused USB/native Ubuntu work and explicitly approved Windows-compatible development. This supersedes the earlier no-coding-on-Windows checkpoint. Develop and test pure logic and package scaffolding now; runtime ROS/Gazebo validation remains mandatory before claiming robot features work. No WSL installation, disk changes or simulator environment modification implied.
+
+## WSL fallback authorized
+User explicitly requested 'Ok Do WSL2'. WSL2 with Ubuntu 22.04 is now the authorized host fallback; native USB installation remains paused. Test official Docker unchanged where possible, record any WSLg/graphics limitations. Windows feature installation and a required restart are expected; do not alter partitions or disable encryption.
