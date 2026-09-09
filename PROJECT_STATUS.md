@@ -273,3 +273,26 @@ Initial hand/map voxel overlap remains under investigation. Planner launch PID71
 currently runs previous self-filter padding .03; Windows padding .06 NOT deployed.
 Dev sources otherwise include latest camera correction. Current simulator session
 26708, planner session27431. Persist evidence and results before container recreation.
+
+## 2026-09-09 contact recovery and planning update
+
+Supersedes the runtime/planner details above. Live planning with 0.06 m self-filter
+padding and time parameterization produced a planning-only right pregrasp path:
+148 waypoints, 186 collision samples, 14.60 simulated seconds. No arm trajectory
+was executed. The plan is now invalid because the base subsequently moved.
+
+Physical contact inspection found the unused left forearm touching the shelf at
+the old 0.95 m approach. New contact aggregation handles partial messages from
+the thirty contact publishers; ordinary base motion and arm planning reject
+active external contact. A bounded backward recovery stopped correctly when
+contact changed from forearm to fingertip after about 8.8 cm. A second observed-
+contact recovery cleared the shelf. Final odom approximately (2.1883,-1.7079,-1.6035),
+with no active contacts. Neither arm was commanded during recovery.
+Logs: docs/sources/contact-recovery-01.log and contact-recovery-02.log.
+
+Initial staging distance changed to 1.25 m; this is conservative staging, not
+validated whole-robot navigation. Fresh full approach still needs testing.
+Live spine geometry and partial-contact tests bring the passing suite to 48.
+Simulator PID4926 and planning launch PID7451 remain running; robot stopped.
+Competition is NOT ready: physical grasp/delivery, full randomized trials,
+row convention confirmation, final report and video remain incomplete.

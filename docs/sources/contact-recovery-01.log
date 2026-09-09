@@ -1,0 +1,8 @@
+RECOVERY_START:{"pose": [2.1848996201984936, -1.905416162043623, -1.5928278970052714], "contacts": [["erc_shelf::shelf_base_link::base_link_shelf_collision", "tiago_pro::arm_left_6_link::arm_left_6_link_collision"]]}
+[INFO] [1788973895.998378625] [erc_robot_io]: BASE_GOAL:x=2.1875,y=-1.7854,heading=-1.5928
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/recover_shelf_contact.py", line 24, in <module>
+    node.move_to(x-.12*math.cos(a),y-.12*math.sin(a),a,timeout=60,max_speed=.05,recovery_contacts=contacts)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/robot_io.py", line 257, in move_to
+    if unexpected: raise RuntimeError('Unexpected robot/environment contact: '+str(sorted(unexpected)))
+RuntimeError: Unexpected robot/environment contact: [('erc_shelf::shelf_base_link::base_link_shelf_collision', 'tiago_pro::gripper_left_fingertip_left_link::gripper_left_fingertip_left_link_collision')]

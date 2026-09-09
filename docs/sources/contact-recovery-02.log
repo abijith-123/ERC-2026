@@ -1,0 +1,4 @@
+RECOVERY_START:{"pose": [2.186778382583599, -1.8175392200221356, -1.592951423228938], "contacts": [["erc_shelf::shelf_base_link::base_link_shelf_collision", "tiago_pro::gripper_left_fingertip_left_link::gripper_left_fingertip_left_link_collision"]]}
+[INFO] [1788973985.975528136] [erc_robot_io]: BASE_GOAL:x=2.1894,y=-1.6976,heading=-1.5930
+[INFO] [1788974008.024685235] [erc_robot_io]: BASE_REACHED:x=2.1882,y=-1.7091,heading=-1.6035
+RECOVERY_PASS:{"pose": [2.1882807114887655, -1.7078592186234065, -1.6034975091478003], "active_contacts": []}
