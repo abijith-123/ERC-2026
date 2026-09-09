@@ -206,3 +206,70 @@ Dev overlay /opt/dev_ws; persistent overlay /opt/team_ws rebuilt from synchroniz
 read-only /opt/team_submission. Runtime dev output remains /opt/dev_submission;
 copy results/images out before container recreation. Prior results backed up to
 ~/erc2026/progress/development-results. Row topic withheld until numbering clarified.
+
+## Perception PASS; approach and arm planning development — 2026-09-09
+Fresh scene 02 autonomous sweep found column 2/red, top occupied index 1, in
+143 wall seconds. Live evidence visually checked; actual result correctly false
+(perception-only). Next column 5/blue run found it in 7.5 seconds from the settled
+view and reached a coarse depth-derived base approach. Evidence/results copied to
+Windows submission/erc_images and results (ignored local artifacts). Logs saved
+in docs/sources/live-perception-pass.log and live-navigation-pass.log.
+
+Scene 03 edge-column approach timed out near its target during a tiny heading
+correction. Fixed low-speed angular deadband; bounded small-angle live turn/back
+passed. Head command validation corrected to official soft upper pitch 0.279 rad;
+an earlier over-limit diagnostic saturated and required a fresh simulation.
+Close RGBD association added with a strict 0.30 m prior-position gate and three
+distinct stable frames. It rejects a larger same-color distractor and invalid
+depth in tests. A manually approximated diagnostic prior was rejected after the
+incomplete approach; no integrated close-approach success claimed yet.
+
+Planning-only MoveIt configuration reads the official robot URDF. FK matched live
+TF to numerical precision. Current fully lowered shoulder has ~0.8 mm body overlap;
+this arm/body collision remains enabled. Parallel same-finger linkage contacts are
+marked adjacent in SRDF. Some raised-torso IK queries succeed, others fail. No
+environment collision geometry or arm trajectory execution implemented yet.
+
+Submission d816e11 synchronized Windows/Linux/dev container. 42 tests pass under
+ROS Humble. Current default development stage is navigation then close reacquisition,
+and always records incomplete delivery. Current scene 04 is running; log
+~/erc2026/progress/simulation-scene-04.log. Active solution launch PID 5832,
+live-approach-trial-03.log, from fresh start with column 5/blue. Planning node stopped
+before reset. Preserve dev results/images before recreating container. No full
+competition trial has succeeded; row convention, actual grasp/delivery, five full
+randomized trials, final report/video and submission still outstanding.
+
+## CRITICAL calibration fix and close diagnostic PASS — 2026-09-09
+Submission aa94f45 committed (Linux clone still d816e11 until next sync). Scene 04
+remains running; current robot near shelf, odom about (2.1849,-1.9054,-1.5928),
+head pitch -0.25. No motion controller active. Same-scene resume_approach diagnostic
+reached saved goal and reacquired blue book over three frames; result
+20260909T022838-cf3840 is intentionally incomplete/no delivery.
+
+Investigating grasp exposed incorrect RGB/depth registration. Official URDF has
+both camera render sensors at head_front_camera_link with no sensor pose offset,
+while their gz_frame_id optical names have a 15 mm hardware-style TF offset.
+Applying that offset shifted thin-spine depth into background. RobotIO now obtains
+and validates render mounts from live robot_description, uses colocated depth
+pixels, and transforms through the actual render link. Intrinsics must match;
+changed mounts fail closed. No official simulator files modified. Live comparison:
+foreground optical depth 0.849 m, projected book height 0.257 m; old shifted depth
+sampled background near 1.05 m. Corrected base point about (.9324,.1484,.9301).
+43 pure tests pass including model-mount mismatch rejection. Earlier recognition
+evidence is valid, but earlier depth estimates must not guide a grasp.
+
+Generic digit shear augmentation fixed a leftmost 5 failing the unchanged 0.07
+ambiguity margin. Fine base control now rotates large angles first and combines
+small yaw correction with translation, with minimum nonzero speed to overcome
+stiction. Resumed approach passed using this control.
+
+MoveIt live OctoMap works after installing declared ros-humble-moveit-ros-perception
+2.5.9 (only new perception/freeglut packages, no ROS/Gazebo upgrade). Map verified
+nonempty in odom, planar virtual joint present, FK agrees with live TF. Planning
+launch disables execution. Right shoulder housing/torso mount contact now marked
+adjacent; other arm/body collisions remain enabled. A pre-grasp proposal (.80,.148,
+.93) with proposed torso .05 passed collision-aware IK/state validity; no arm moved.
+Initial hand/map voxel overlap remains under investigation. Planner launch PID7167
+currently runs previous self-filter padding .03; Windows padding .06 NOT deployed.
+Dev sources otherwise include latest camera correction. Current simulator session
+26708, planner session27431. Persist evidence and results before container recreation.

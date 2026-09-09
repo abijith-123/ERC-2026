@@ -1,0 +1,22 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-08-19-33-18-960887-DESKTOP-TCVDJTQ-3028
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [velocity_watchdog-1]: process started with pid [3049]
+[INFO] [mission_controller-2]: process started with pid [3051]
+[mission_controller-2] [INFO] [1788895999.872903775] [mission_controller]: STATE:VALIDATING_REQUEST validated launch request and writable repository
+[mission_controller-2] [INFO] [1788896000.284481016] [mission_controller]: STATE:INITIAL_ORIENTATION fresh odometry, joint feedback and lasers
+[mission_controller-2] [INFO] [1788896000.285386806] [mission_controller]: STATE:SCANNING_SHELF_LABELS live RGB/depth registration and bounded visual sweep
+[mission_controller-2] [INFO] [1788896006.404264526] [mission_controller]: VIEW_REJECTED:Lookup would require extrapolation into the future.  Requested time 49.072000 but the latest data is at time 49.068000, when looking up transform from frame [head_front_camera_color_optical_frame] to frame [base_footprint]
+[mission_controller-2] [INFO] [1788896007.298847613] [mission_controller]: STATE:TARGET_COLUMN_FOUND three distinct stable live frames; label 5
+[mission_controller-2] [INFO] [1788896007.345818001] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260908T193319-4b9183/20260908T193326_789556Z_ros49172000000_column_f535c5001cb4.png
+[mission_controller-2] [INFO] [1788896007.346640620] [mission_controller]: STATE:SEARCHING_FOR_BOOK four distinct colors associated using observed 3D marker spacing
+[mission_controller-2] [INFO] [1788896007.347216404] [mission_controller]: STATE:BOOK_FOUND target color blue; observed top index 1
+[mission_controller-2] [INFO] [1788896007.379985141] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260908T193319-4b9183/20260908T193326_789556Z_ros49172000000_book_04ab255db664.png
+[mission_controller-2] [WARN] [1788896007.382667251] [mission_controller]: Row output withheld until official numbering is confirmed
+[mission_controller-2] [INFO] [1788896007.383493935] [mission_controller]: STATE:ROW_IDENTIFIED observed occupied-row index 1; convention unconfirmed
+[mission_controller-2] [INFO] [1788896007.384116550] [mission_controller]: STATE:NAVIGATING_TO_COLUMN target metric point derived from registered live RGB/depth
+[mission_controller-2] [INFO] [1788896114.091355817] [mission_controller]: STATE:ALIGNING_TO_TARGET odometry approach reached; close-range visual reacquisition required
+[mission_controller-2] [ERROR] [1788896114.092078131] [mission_controller]: RuntimeError:development_stage_complete:navigation_only
+[mission_controller-2] [WARN] [1788896114.231995101] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:development_stage_complete:navigation_only; result /opt/dev_submission/results/20260908T193319-4b9183.json
+[ERROR] [mission_controller-2]: process has died [pid 3051, exit code 1, cmd '/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_4a56tcc_'].
+[INFO] [velocity_watchdog-1]: sending signal 'SIGINT' to process[velocity_watchdog-1]
+[INFO] [velocity_watchdog-1]: process has finished cleanly [pid 3049]
