@@ -1,0 +1,55 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-10-05-19-02-100219-DESKTOP-TCVDJTQ-9665
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [velocity_watchdog-1]: process started with pid [9687]
+[INFO] [mission_controller-2]: process started with pid [9689]
+[mission_controller-2] [INFO] [1789017543.113616547] [mission_controller]: STATE:VALIDATING_REQUEST validated launch request and writable repository
+[mission_controller-2] [INFO] [1789017543.216881471] [mission_controller]: STATE:INITIAL_ORIENTATION fresh odometry, joint feedback and lasers
+[mission_controller-2] [INFO] [1789017543.218082402] [mission_controller]: STATE:SCANNING_SHELF_LABELS live RGB/depth registration and bounded visual sweep
+[mission_controller-2] [INFO] [1789017548.546025563] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017550.734511804] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017552.780883238] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017554.921736817] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017556.529726664] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017561.942510284] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017565.178671775] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017567.305485674] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017569.440124777] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017570.964850191] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017576.079366368] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017578.104440831] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017580.213906660] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017582.217914603] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017584.021802796] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017614.542180538] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017616.605352971] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017618.783212626] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017620.886008775] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017622.480227781] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017628.035085015] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017630.113019149] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017632.188980096] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017634.445291014] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017636.014898192] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017642.348597259] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017644.401818923] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017647.798752039] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017649.866481657] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-2] [INFO] [1789017651.646114248] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-2] [INFO] [1789017684.335236679] [mission_controller]: STATE:TARGET_COLUMN_FOUND three distinct stable live frames; label 5
+[mission_controller-2] [INFO] [1789017684.371822734] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T051902-ee6829/20260910T052124_107983Z_ros30758000000_column_09deb6b8f8a7.png
+[mission_controller-2] [INFO] [1789017684.372871528] [mission_controller]: STATE:SEARCHING_FOR_BOOK four distinct colors associated using observed 3D marker spacing
+[mission_controller-2] [INFO] [1789017684.373887633] [mission_controller]: STATE:BOOK_FOUND target color blue; observed top index 3
+[mission_controller-2] [INFO] [1789017684.400965122] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T051902-ee6829/20260910T052124_107983Z_ros30758000000_book_d4d835030ea9.png
+[mission_controller-2] [WARN] [1789017684.402565163] [mission_controller]: Row output withheld until official numbering is confirmed
+[mission_controller-2] [INFO] [1789017684.403358183] [mission_controller]: STATE:ROW_IDENTIFIED observed occupied-row index 3; convention unconfirmed
+[mission_controller-2] [INFO] [1789017684.405719466] [mission_controller]: STATE:NAVIGATING_TO_COLUMN target metric point derived from registered live RGB/depth
+[mission_controller-2] [INFO] [1789017684.409589854] [mission_controller]: BASE_GOAL:x=0.1949,y=-1.5494,heading=-1.5778
+[mission_controller-2] [INFO] [1789017740.599084722] [mission_controller]: BASE_REACHED:x=0.1934,y=-1.5377,heading=-1.5660
+[mission_controller-2] [INFO] [1789017740.726259424] [mission_controller]: STATE:ALIGNING_TO_TARGET odometry approach reached; close-range visual reacquisition required
+[mission_controller-2] [INFO] [1789017752.911875976] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T051902-ee6829/20260910T052232_695201Z_ros43330000000_book_a47798052e65.png
+[mission_controller-2] [INFO] [1789017752.913576667] [mission_controller]: APPROACH_STAGE_PASS: close target verified; grasp still pending
+[mission_controller-2] [ERROR] [1789017752.914669655] [mission_controller]: RuntimeError:development_stage_complete:navigation_only
+[mission_controller-2] [WARN] [1789017753.066866274] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:development_stage_complete:navigation_only; result /opt/dev_submission/results/20260910T051902-ee6829.json
+[ERROR] [mission_controller-2]: process has died [pid 9689, exit code 1, cmd '/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_5drlezhl'].
+[INFO] [velocity_watchdog-1]: sending signal 'SIGINT' to process[velocity_watchdog-1]
+[INFO] [velocity_watchdog-1]: process has finished cleanly [pid 9687]

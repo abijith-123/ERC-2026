@@ -320,3 +320,13 @@ Fresh column5/blue navigation test session66796 is running. All scene04 plans
 and observed coordinates are invalid for scene05. No official files modified.
 51 tests pass. Arm action executor and insertion prototype remain development
 tools; mission still stops after navigation and must not be called complete.
+
+Scene05 fresh navigation completed: trial20260910T051902-ee6829 identified
+column5/blue (observed top index3), approached at the revised 1.25 m staging
+distance and reacquired the target. Total wall time203.50 s, navigation55.25 s,
+alignment11.12 s. Saved result remains success:false/navigation_only with zero
+grasp attempts; collision count remains null, not a fabricated zero. Robot is
+stopped near odom(.1934,-1.5377,-1.5660); default arms, head tracking target.
+Official headless simulator continues; no planner or mission process is running.
+Windows results/images now include this trial; log docs/sources/fresh-navigation-05.log.
+DEMONSTRATION.md shows verified progress and remaining requirements.
