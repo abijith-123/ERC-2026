@@ -1,0 +1,2 @@
+[INFO] [1788974444.812165530] [erc_right_arm_lift]: ARM_PLAN_PASS: 154 waypoints, 230 collision samples, 15.20 simulated seconds
+LIFT_RESULT:{"executed": true, "duration_sim": 15.202447009, "final_joints": {"arm_right_1_joint": -2.1209696075946916, "arm_right_2_joint": -2.112084399305307, "arm_right_3_joint": 0.7490007672305035, "arm_right_4_joint": -2.1760864837094944, "arm_right_5_joint": 3.5918406816610635, "arm_right_6_joint": -0.1213350553286547, "arm_right_7_joint": 1.9676170615632622}}

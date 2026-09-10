@@ -1,0 +1,4 @@
+LIVE_SPINE:{"front": [1.0101891940716072, -0.47220841203555436, 0.9199386388990642], "geometry": {"height": 0.22525259617004878, "spine_width": 0.02056578419666505, "support": 960}, "pregrasp": [0.9102379552059368, -0.4753308868901655, 0.9199386388990642]}
+[INFO] [1788974689.581047352] [erc_pregrasp_planning]: ARM_PLAN_PASS: 41 waypoints, 51 collision samples, 3.91 simulated seconds
+PREGRASP_PLAN_SAVED:/tmp/pregrasp-aligned-01.json
+PREGRASP_EXECUTED:{"executed": true, "duration_sim": 3.90578717, "final_joints": {"arm_right_1_joint": -2.571877439999155, "arm_right_2_joint": -1.4579914473238118, "arm_right_3_joint": 0.6542242793335032, "arm_right_4_joint": -1.4086254118310981, "arm_right_5_joint": 3.55211253868214, "arm_right_6_joint": -0.11072979849476951, "arm_right_7_joint": 1.9389767769816084}}

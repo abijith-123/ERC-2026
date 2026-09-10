@@ -296,3 +296,27 @@ Live spine geometry and partial-contact tests bring the passing suite to 48.
 Simulator PID4926 and planning launch PID7451 remain running; robot stopped.
 Competition is NOT ready: physical grasp/delivery, full randomized trials,
 row convention confirmation, final report and video remain incomplete.
+
+## 2026-09-10 executed arm diagnostics and simulator restart
+
+Scene04: additional left inner-finger contact stopped lateral motion; bounded
+backward recovery cleared it. Lateral right-arm alignment then passed, followed
+by a planned right-arm lift (154 waypoints/230 collision samples, 15.20 sim s).
+FollowJointTrajectory returned success and final joints matched. Raised-arm
+forward approach passed. Fresh visual blue spine front approximately
+(1.0102,-.4722,.9199) in base gave a pregrasp 10 cm forward of the spine:
+41 waypoints/51 samples, 3.91 sim s, executed successfully with feedback.
+Neither completed arm motion detected external contact; neither is a grasp.
+Logs saved in docs/sources/right-arm-lift-01.log, raised-arm-approach-01.log,
+pregrasp-aligned-01.log. Detailed plans are in Linux progress/pregrasp-aligned-01*.
+
+Insertion preparation opened the right gripper, created a perception-derived
+MoveIt book object, and rejected a not-yet-rebuilt OctoMap. Fixed the wait to
+require actual map data. Retry could not initialize sensors: Gazebo exited on
+an XIO error and killed its server. Thus NO insertion/pinch/delivery occurred.
+Stopped old launch processes and restarted official simulation headless:=true,
+scene05 log ~/erc2026/progress/simulation-scene-05.log, exec session92315.
+Fresh column5/blue navigation test session66796 is running. All scene04 plans
+and observed coordinates are invalid for scene05. No official files modified.
+51 tests pass. Arm action executor and insertion prototype remain development
+tools; mission still stops after navigation and must not be called complete.
