@@ -1,0 +1,7 @@
+[INFO] [1789159978.178743587] [erc_book_insertion]: ARM_PLAN_PASS: 62 waypoints, 78 collision samples, 6.08 simulated seconds
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/plan_book_insertion.py", line 24, in <module>
+    print('INSERTION_RESULT:'+json.dumps(execute_right_arm(robot,trajectory)),flush=True)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/arm_execution.py", line 56, in execute_right_arm
+    if robot.active_contacts(): raise RuntimeError('Unexpected contact during arm motion')
+RuntimeError: Unexpected contact during arm motion

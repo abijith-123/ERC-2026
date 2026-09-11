@@ -1,0 +1,18 @@
+[INFO] [1789018850.379237240] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T054035-63ba7c/20260910T054050_125766Z_ros88408000000_book_398724db65b1.png
+[INFO] [1789018854.504729154] [mission_controller]: BASE_GOAL:x=-1.4935,y=-1.5894,heading=-1.5663
+[INFO] [1789018855.407142659] [mission_controller]: BASE_REACHED:x=-1.5049,y=-1.5895,heading=-1.5663
+[INFO] [1789018871.861999467] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T054035-63ba7c/20260910T054111_669959Z_ros92236000000_book_16f461209afa.png
+[INFO] [1789018892.121110367] [mission_controller]: ARM_PLAN_PASS: 24 waypoints, 25 collision samples, 2.27 simulated seconds
+[INFO] [1789018918.724317471] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T054035-63ba7c/20260910T054158_490740Z_ros100420000000_book_688ad3272e01.png
+[INFO] [1789018919.278534686] [mission_controller]: BASE_GOAL:x=-1.5024,y=-1.7634,heading=-1.5663
+[INFO] [1789018932.913608468] [mission_controller]: BASE_REACHED:x=-1.5024,y=-1.7516,heading=-1.5663
+[INFO] [1789018946.800819980] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T054035-63ba7c/20260910T054226_604393Z_ros105536000000_book_d33d3f363463.png
+[INFO] [1789018962.106872616] [mission_controller]: ARM_PLAN_PASS: 176 waypoints, 234 collision samples, 17.45 simulated seconds
+[INFO] [1789019093.236648120] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260910T054035-63ba7c/20260910T054453_023262Z_ros129560000000_book_8b4383690400.png
+[WARN] [1789019093.502852881] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:Old observed book could not be replaced; result /opt/dev_submission/results/20260910T054035-63ba7c.json
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/attempt_observed_grasp.py", line 88, in <module>
+    add_observed_book(robot,front,normal,geometry['spine_width'],geometry['height'])
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/grasp_scene.py", line 51, in add_observed_book
+    raise RuntimeError('Old observed book could not be replaced')
+RuntimeError: Old observed book could not be replaced

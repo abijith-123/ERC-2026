@@ -330,3 +330,30 @@ stopped near odom(.1934,-1.5377,-1.5660); default arms, head tracking target.
 Official headless simulator continues; no planner or mission process is running.
 Windows results/images now include this trial; log docs/sources/fresh-navigation-05.log.
 DEMONSTRATION.md shows verified progress and remaining requirements.
+
+## 2026-09-12 manipulation diagnostics (not competition complete)
+
+Scene05 later segfaulted in Gazebo EntityComponentManager::ProcessRemoveEntityRequests.
+Restarted unchanged official headless simulation as scene06, PID10156/10177,
+log ~/erc2026/progress/simulation-scene-06.log. Planner PID11137/11159 uses
+the updated shoulder adjacency pairs and 0.06 m self-filter padding.
+
+Fresh navigation trial20260910T053353-3efa5a passed for column5/blue, top index3.
+Its same-scene checkpoint is results/observations/20260910T053353-3efa5a.approach.json.
+Grasp diagnostic20260910T054035-63ba7c performed lateral alignment, lift,
+closer approach and pregrasp. Planar base candidate validation now explicitly
+sets multi_dof_joint_state.header.frame_id='odom'; the earlier omitted frame
+was caught from MoveIt warnings and the active arm motion cancelled before
+allowing further base motion. Added a regression test for the candidate frame.
+
+Grasp stopped at absent planning-object removal; fixed to check existing objects
+before REMOVE. Subsequent insertion cancelled on physical finger/book contact.
+Observed contact identity: book_col_5_row_4_blue with right fingertip_left.
+Only the identity is used to scope physical contact allowance; encoded column,
+row and colour fields are not read for target localization.
+Actual stopped hand was about (1.0417,-.4363,.9968) vs book center near .92 m high.
+Camera capture .tools/wsl/insertion-contact-06/rgb.png shows the open hand at book.
+Cartesian recovery returned 3.85% and was rejected. Joint-space recovery is
+currently running as exec session48854, log target-contact-grasp-06.log.
+No verified pinch, retention or delivery yet. 64 tests pass. All new grasp,
+delivery and clearance components remain development-stage software.
