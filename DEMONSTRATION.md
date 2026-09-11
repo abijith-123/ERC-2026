@@ -9,7 +9,7 @@ Status: **incomplete competition entry — no verified book delivery**.
 | Right-arm lift | Action success, final joint feedback checked; 15.20 simulated seconds |
 | Forward approach with raised right arm | Odometry goal reached; no detected external contact |
 | Right-arm pregrasp | Action success, final joint feedback checked; 3.91 simulated seconds |
-| Automated checks | 51 passing tests |
+| Automated checks | 64 passing tests |
 | Fresh randomized scene05 approach | Column5/blue identified and reacquired; 203.50 s wall time; no grasp attempted |
 
 These were development diagnostics in scene04. The book remained on the shelf.
@@ -32,3 +32,8 @@ Logs: [arm lift](docs/sources/right-arm-lift-01.log),
 Gazebo exited on an X-server error after the pregrasp. The simulator was restarted
 with the organizer's headless mode. Old scene coordinates and plans are invalid.
 See [project status](PROJECT_STATUS.md) for the latest running trial and results.
+
+Latest manipulation test, 12 September: the open fingertip contacted the target,
+and recovery left the book lying flat. The detector rejected that geometry and
+stopped without closing. This is a failed grasp attempt, not a completed entry.
+[Failure camera frame](docs/sources/book-toppled-scene06.png).

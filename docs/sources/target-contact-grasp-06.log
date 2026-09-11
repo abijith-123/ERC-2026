@@ -1,0 +1,7 @@
+[INFO] [1789160567.810087863] [erc_straight_grasp_retry]: ARM_PLAN_PASS: 195 waypoints, 232 collision samples, 19.40 simulated seconds
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/straight_grasp_retry.py", line 30, in <module>
+    snapshot=robot.snapshot();detection,_=locate_near_book(snapshot,args.colour,expected)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/rgbd.py", line 121, in locate_near_book
+    raise ValueError('Close target missing or ambiguous in observed metric gate')
+ValueError: Close target missing or ambiguous in observed metric gate

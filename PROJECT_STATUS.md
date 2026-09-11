@@ -357,3 +357,14 @@ Cartesian recovery returned 3.85% and was rejected. Joint-space recovery is
 currently running as exec session48854, log target-contact-grasp-06.log.
 No verified pinch, retention or delivery yet. 64 tests pass. All new grasp,
 delivery and clearance components remain development-stage software.
+
+Recovery session48854 has finished and no motion controller is running. The
+19.40 sim-second withdrawal completed, but fresh RGB showed the blue book now
+lying flat on the shelf. The upright-book reacquisition gate rejected it and
+no pinch was issued. This attempt FAILED; do not reuse its upright target
+geometry. Evidence: docs/sources/book-toppled-scene06.png and
+docs/sources/target-contact-grasp-06.log. Robot remains stopped in scene06.
+Next manipulation work must fix approach geometry/IK branch continuity and
+avoid toppling the target, then validate a physical pinch in a fresh scene.
+The complete autonomous delivery pipeline, five full trials, report and video
+remain unfinished. There is no competition-ready version to deliver yet.
