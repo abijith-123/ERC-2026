@@ -1,0 +1,5 @@
+[INFO] [1789200881.713997503] [erc_carried_return]: BASE_GOAL:x=1.4203,y=-1.5152,heading=-1.5655
+[INFO] [1789200918.678033462] [erc_carried_return]: BASE_REACHED:x=1.4203,y=-1.5264,heading=-1.5655
+[INFO] [1789200925.956306118] [erc_carried_return]: BASE_GOAL:x=-0.0031,y=0.0000,heading=-1.5655
+[INFO] [1789201162.262161661] [erc_carried_return]: BASE_REACHED:x=0.0046,y=-0.0083,heading=-1.5655
+CARRIED_RETURN_VERIFIED:{"book_contact_id": "book_col_2_row_4_blue", "opposing_contacts_verified": true, "gripper_joint": 0.005060000197102647, "stamp": 328.572, "delivery_verified": false, "retention_after_retreat_verified": true, "retreat_m": 0.04, "lift_m": 0.0, "start_hand": [0.8423489032370566, -0.2866055475244577, 0.9321052440327859], "continued_after_partial_withdrawal": true, "returned_to_start_position": true, "return_pose": [0.004569777902876851, -0.008257554489045317, -1.565508153163684]}

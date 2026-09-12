@@ -1,0 +1,15 @@
+[INFO] [1789161393.848324390] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260911T211621-c5290a/20260911T211633_566243Z_ros63426000000_book_4a5b8d1ef025.png
+[INFO] [1789161398.546619796] [mission_controller]: BASE_GOAL:x=1.4312,y=-1.5990,heading=-1.5655
+[INFO] [1789161421.553657091] [mission_controller]: BASE_REACHED:x=1.4197,y=-1.5990,heading=-1.5655
+[INFO] [1789161442.723300753] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260911T211621-c5290a/20260911T211722_476518Z_ros71214000000_book_ce1e309feccf.png
+[INFO] [1789161478.732811573] [mission_controller]: ARM_PLAN_PASS: 156 waypoints, 201 collision samples, 15.42 simulated seconds
+[INFO] [1789161576.266363420] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260911T211621-c5290a/20260911T211936_061702Z_ros94646000000_book_b7bf69da1d5d.png
+[WARN] [1789161577.311142478] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:Whole-robot staging collision: [('<octomap>', 'arm_left_6_link'), ('<octomap>', 'arm_left_7_link')]; result /opt/dev_submission/results/20260911T211621-c5290a.json
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/attempt_observed_grasp.py", line 83, in <module>
+    translate(forward=float(front[0]-.85))
+  File "/opt/dev_submission/scripts/attempt_observed_grasp.py", line 61, in translate
+    check_base_segment(robot,goal)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/body_clearance.py", line 32, in check_base_segment
+    if not valid: raise RuntimeError('Whole-robot staging collision: '+str(contacts))
+RuntimeError: Whole-robot staging collision: [('<octomap>', 'arm_left_6_link'), ('<octomap>', 'arm_left_7_link')]

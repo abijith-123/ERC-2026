@@ -1,0 +1,63 @@
+{
+  "book_contact_id": "book_col_2_row_4_blue",
+  "opposing_contacts_verified": true,
+  "gripper_joint": 0.005060000197102647,
+  "stamp": 1007.756,
+  "delivery_verified": true,
+  "retention_after_retreat_verified": true,
+  "retreat_m": 0.04,
+  "lift_m": 0.0,
+  "start_hand": [
+    0.8423489032370566,
+    -0.2866055475244577,
+    0.9321052440327859
+  ],
+  "continued_after_partial_withdrawal": true,
+  "bin_center_base": [
+    1.1566319465637207,
+    -0.3880952000617981,
+    0.9494670849674944
+  ],
+  "bin_corners_base": [
+    [
+      0.8761675953865051,
+      -0.5319761633872986
+    ],
+    [
+      1.426510214805603,
+      -0.5509684681892395
+    ],
+    [
+      1.437096357345581,
+      -0.2442142367362976
+    ],
+    [
+      0.8867536783218384,
+      -0.2252219319343567
+    ]
+  ],
+  "placement_staging_pose": [
+    -0.3230622114005492,
+    -0.22191203456254033,
+    1.593387962044241
+  ],
+  "delivery_evidence": {
+    "bin_contact_stamp": 1034.052,
+    "bin_contact_pairs": [
+      [
+        "erc_collection_bin::collection_bin_base_link::base_link_collection_bin_collision",
+        "erc_table::table_base_link::base_link_table_collision"
+      ],
+      [
+        "erc_collection_bin::collection_bin_base_link::base_link_collection_bin_collision",
+        "book_col_2_row_4_blue::book_base_link::base_link_book_collision"
+      ]
+    ],
+    "verified_wall": 24910.518669966
+  },
+  "release_tool_pose": [
+    1.036693885922432,
+    -0.3839653991162777,
+    1.0994682141903027
+  ]
+}

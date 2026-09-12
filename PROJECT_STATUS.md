@@ -368,3 +368,124 @@ Next manipulation work must fix approach geometry/IK branch continuity and
 avoid toppling the target, then validate a physical pinch in a fresh scene.
 The complete autonomous delivery pipeline, five full trials, report and video
 remain unfinished. There is no competition-ready version to deliver yet.
+
+## 2026-09-12 scene07 reach and Cartesian diagnostics
+
+Unchanged official scene07 and MoveIt planner are running. Fresh navigation
+20260911T211116-2a4739 passed for column5/blue. Revised book lateral alignment
+y=-.30 and right-arm lift (.60,-.30,observed height) executed. Whole-body checks
+blocked the proposed x=.85 book staging distance on idle left-arm/shelf geometry.
+Planning-only torso sweeps 0..35 cm found no clear 40 cm advance. Shorter guarded
+advances brought the observed book to x=.99 without detected external contact.
+Straight pregrasp executed; live evidence docs/sources/pregrasp-scene07.png.
+
+Insertion requests returned 88.9% then92.3% and were never executed. Controlled
+planning-only comparisons with identical collision checking isolated the relative
+jump threshold: threshold2 returns92.3%, threshold0 returns100%, for yaw0 and the
+observed shelf yaw. Largest returned timed waypoint delta was .025 rad. Cartesian
+planning now uses threshold0 with an independent cumulative1.5 rad per-joint travel
+limit, existing sampled collision checks and bounded action execution. Empty/wrong
+frame maps are now explicitly rejected for Cartesian planning. 66 tests pass and
+the dev overlay builds. Retry07d is active in exec session21919,
+~/erc2026/progress/observed-grasp-07d.log. No verified pinch or delivery yet.
+
+## Scene07 physical pickup and return passed; bin work active
+
+Retry07e physically pinched the observed blue book. Checkpoint
+results/20260912T080434-b2a2c8.pinch.json records opposing contacts with the opaque
+identity book_col_2_row_4_blue and blocked gripper opening .00506 m. Never decode
+that identity for target localization. Lift12 mm passed; withdrawal20 cm timed
+out after roughly17 cm because the simulator was slower than8x wall time.
+Retention remained present; a guarded4 cm continuation passed and wrote the
+same-prefix .retention.json. Base return wrote .return.json at approximately
+(.0046,-.0083,-1.5655), within1 cm of the recorded start position. All motions used
+physical contact retention guards. No Gazebo attachment/pose/physics changes.
+The MoveIt attached object is carried collision geometry only, not a physical
+constraint. Evidence: carried-book-scene07.png, observed-grasp-07e.log,
+book-retention-07.log, book-retention-07b.log, carried-return-07.log.
+
+Head-only bin scan /tmp/bin-scan-07 found no candidate in three forward/side views.
+Turn attempts stopped on the wider1.15 m laser clearance guard. Investigation
+found a real laser transform bug: official scanners have roll pi, but old code
+used yaw alone. Full quaternion projection now fixes mirrored obstacles; regression
+test added. Earlier full navigation must be revalidated after this fix. Nearby
+objects are behind the robot, not the idle arm (initial hypothesis disproved).
+
+Another guard exposed floor voxels colliding with wheels at z=.028 m. New
+planning_cloud node transforms raw depth through the validated actual render
+mount into odom and excludes the flat ground plane below25 mm, preserving obstacle
+checks on all links. Planner restarted with this node; carried collision geometry
+saved/restored via /tmp/carried-planning-scene07.bin. No simulator restart.
+New planner session16395, launchPID14834, filter14856, MoveIt14858,
+log moveit-scene07-calibrated.log. Official server remainsPID12343/launch12322.
+72 tests pass; dev overlay builds. A further35 cm forward clearance move followed
+by a guarded180-degree turn is running in exec session67404. Robot started at
+(.2354,-.2562,-1.5655); move goal(.2372,-.6062,-1.5655). Book remains physically held.
+
+Submission source latest committed bd4fa96, with subsequent laser/turn/cloud
+changes not yet committed. Linux clone is older e2ec4bb until next sync.
+Bin detector now exists with metric floor/size gates and full-rim requirement,
+but needs live validation. Delivery, integrated full mission, five full trials,
+row convention, report and video remain incomplete. Do not claim final readiness.
+
+## Scene07 physical delivery VERIFIED (latest)
+
+The carried turn passed after the second clearance move, ending near
+(.2372,-.5962,1.5956). The camera found the red bin ON A TABLE, disproving the
+initial floor-bin assumption. Live RGB/depth measured footprint approximately
+.56 by .31 m, bottomz.74 and topz.95. The scoop's front lip is lower than its back,
+so fitting only a horizontal top rim was wrong. Bin vision now fits the complete
+observed footprint with all four corner supports, known metric dimensions and
+height gates. A1-pixel colour-mask erosion rejects mixed RGB/depth boundary pixels
+that otherwise included background floor points and inflated the rectangle.
+
+Torso lift to .189048 m passed with physical retention monitoring and a hold-on-
+failure command. Diagonal table approach was rejected on idle-left-gripper
+geometry. Planning-only candidate tests found lateral-first alignment to book/bin
+y=-.4 then advance to bincenterx1.15 clear, with reachable drop IK. Both base legs
+executed. The held book occluded the bin; right hand moved to(.70,-.60,1.12115),
+retention passed and the whole bin became visible. Three fresh frames gave
+bincenter(1.15663,-.38810,.94947), all corners recorded in results/bin-staging-scene07.json.
+
+Physical placement used a collision-checked joint-space path after the Cartesian
+travel bound rejected the long movement. It passed149 waypoints/209 samples,
+14.79 simseconds. Measured release toolpose(1.03669,-.38397,1.09947) passedfeedback,
+then gripperopened .055. /bin_contacts verified the SAME opaque contacted book
+book_col_2_row_4_blue against erc_collection_bin continuously >=2 simseconds with
+no robot/book contact. Result: results/physical-delivery-scene07.json. Evidence
+copied to docs/sources/physical-delivery-scene07.json and its executionlog07b.
+
+After delivery, removed only MoveIt carried-object bookkeeping, refreshedmap and
+withdrew the openhand to(.85,-.50,~1.09947). No Gazebo model or physics changes.
+Final camera docs/sources/delivered-book-scene07.png visibly shows blue book in bin.
+Robot stopped at base(-.32306,-.22191,1.59339), torso.189048, gripper.055,
+headpan0/pitch-.5. No motion diagnostic or watchdog running. Official scene07
+and MoveIt remainrunning; the camera-cloud node was separately restarted to
+preserve the actual optical sensor origin for correct Octomap ray tracing.
+Planner session16395 remains; cloud session68461 remains. New source defines
+erc_planning_optical TF at the actual render mount; floor filtering is evaluated
+in odom, but filtered output stays in optical coordinates.
+
+Found a final placement-model detail: GetPlanningScene stores the .055 m carried
+book offset in CollisionObject.pose, with identity primitive pose. The successful
+run ignored that offset but still physically delivered inside the roomy bin.
+Updated placement_goal now composes both poses and checks all eight book corners
+with25 mm footprint margin and bottom clearance. This correction has unit coverage
+but has not yet been used in a second live delivery. 75 tests pass. Latest code
+is being committed/synced; use git HEAD instead of earlier revision notes above.
+
+THIS IS ONE LINKED DIAGNOSTIC SUCCESS, not an uninterrupted competition trial.
+solution.launch.py still stops after navigation. Required next work: integrate
+all stages, generalize collision-safe staging across rows/columns, revalidate
+after sensor fixes, five full randomized trials, official row convention, report
+and unedited video. Do not claim the complete entry is ready.
+Some diagnostic JSONs currently live at results root alongside TrialResult files;
+move future diagnostics to a separate directory before using offline summarize,
+which strictly expects only TrialResult JSONs at root. Duplicate nested evidence
+backups were retained after an optional cleanup command was policy-blocked.
+
+Final save: submission commit e5c3390, synced to Linux clone and container; both
+dev and persistent overlays build. 75 tests passed; new placement scripts compile.
+Planner launch14834/MoveIt14858 and standalone cloud15121/15143 remain running.
+No motion controller is active. Raw results/images copied to Windows and Linux
+progress/checkpoint-scene07. No GitHub push or submission has been made.

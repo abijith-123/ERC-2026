@@ -1,0 +1,9 @@
+[INFO] [1789200291.868172073] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T080434-b2a2c8/20260912T080451_484098Z_ros284230000000_book_c222d9e3a3c9.png
+[INFO] [1789200316.540364802] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T080434-b2a2c8/20260912T080516_282341Z_ros287430000000_book_46eeebd59218.png
+[INFO] [1789200316.726087260] [mission_controller]: BASE_GOAL:x=1.4219,y=-1.8259,heading=-1.5655
+[INFO] [1789200317.212891896] [mission_controller]: BASE_REACHED:x=1.4219,y=-1.8152,heading=-1.5655
+[INFO] [1789200339.726531030] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T080434-b2a2c8/20260912T080539_427179Z_ros290468000000_book_056998d9c118.png
+[INFO] [1789200371.709216397] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T080434-b2a2c8/20260912T080611_387254Z_ros294592000000_book_3df610daf7f0.png
+[INFO] [1789200381.740818188] [mission_controller]: ARM_PLAN_PASS: 39 waypoints, 57 collision samples, 3.76 simulated seconds
+PHYSICAL_PINCH_VERIFIED:{"book_contact_id": "book_col_2_row_4_blue", "opposing_contacts_verified": true, "gripper_joint": 0.005060000197102647, "stamp": 301.72400000000005, "delivery_verified": false, "retention_after_retreat_verified": false}
+[WARN] [1789200438.127582149] [mission_controller]: TRIAL_NOT_COMPLETE:pinch_verified_retention_and_delivery_pending; result /opt/dev_submission/results/20260912T080434-b2a2c8.json

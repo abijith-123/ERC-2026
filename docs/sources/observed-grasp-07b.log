@@ -1,0 +1,14 @@
+[INFO] [1789199757.130105053] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T075543-c88fc5/20260912T075556_789381Z_ros208990000000_book_8133cdaabf9a.png
+[INFO] [1789199779.412975928] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T075543-c88fc5/20260912T075619_191337Z_ros212818000000_book_02022befa251.png
+[INFO] [1789199780.244424044] [mission_controller]: BASE_GOAL:x=1.4217,y=-1.7859,heading=-1.5655
+[INFO] [1789199796.122872174] [mission_controller]: BASE_REACHED:x=1.4216,y=-1.7740,heading=-1.5655
+[INFO] [1789199811.166636044] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T075543-c88fc5/20260912T075650_879824Z_ros217934000000_book_e3935396a589.png
+[INFO] [1789199815.735817572] [mission_controller]: ARM_PLAN_PASS: 51 waypoints, 81 collision samples, 4.93 simulated seconds
+[INFO] [1789199874.458237403] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260912T075543-c88fc5/20260912T075754_247692Z_ros227668000000_book_ab7d6eb6f6a4.png
+[WARN] [1789199877.739133192] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:Incomplete collision-checked Cartesian path: 0.8888888888888888; result /opt/dev_submission/results/20260912T075543-c88fc5.json
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/attempt_observed_grasp.py", line 91, in <module>
+    execute_right_arm(robot,planner.plan_straight(front+.025*normal,yaw=yaw))
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/arm_planning.py", line 111, in plan_straight
+    if orientation is not None: pose.orientation=orientation
+RuntimeError: Incomplete collision-checked Cartesian path: 0.8888888888888888

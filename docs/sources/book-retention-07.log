@@ -1,0 +1,9 @@
+[INFO] [1789200564.733017316] [erc_retention_check]: ARM_PLAN_PASS: 21 waypoints, 23 collision samples, 1.96 simulated seconds
+RETAINED_LIFT_PASS
+[INFO] [1789200599.097030249] [erc_retention_check]: ARM_PLAN_PASS: 59 waypoints, 92 collision samples, 5.72 simulated seconds
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/verify_book_retention.py", line 44, in <module>
+    execute_right_arm(r,planner.plan_straight(lifted-[.20,0,0],orientation=orientation),allowed_book=identity,require_retention=True)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/arm_execution.py", line 68, in execute_right_arm
+    if not result.done(): raise RuntimeError('Arm execution deadline')
+RuntimeError: Arm execution deadline

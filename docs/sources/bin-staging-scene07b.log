@@ -1,0 +1,13 @@
+CARRIED_HEIGHT_PASS:0.18959975113982375
+[INFO] [1789239541.047354092] [erc_bin_staging]: BASE_GOAL:x=-0.3248,y=-0.6089,heading=1.5934
+[INFO] [1789239589.100630158] [erc_bin_staging]: BASE_REACHED:x=-0.3135,y=-0.6087,heading=1.5934
+[INFO] [1789239590.403086410] [erc_bin_staging]: BASE_GOAL:x=-0.3233,y=-0.2116,heading=1.5934
+[INFO] [1789239630.508063319] [erc_bin_staging]: BASE_REACHED:x=-0.3230,y=-0.2232,heading=1.5934
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/stage_bin_placement.py", line 48, in <module>
+    r.spin(1.);center,corners=observed()
+  File "/opt/dev_submission/scripts/stage_bin_placement.py", line 24, in observed
+    center,corners=bins[0].opening()
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/bin_vision.py", line 22, in opening
+    raise ValueError('Both sides of the bin opening must be visible')
+ValueError: Both sides of the bin opening must be visible

@@ -1,0 +1,7 @@
+CARRIED_HEIGHT_PASS:0.18904803126257652
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/stage_bin_placement.py", line 42, in <module>
+    check_base_segment(r,goal)
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/body_clearance.py", line 32, in check_base_segment
+    if not valid: raise RuntimeError('Whole-robot staging collision: '+str(contacts))
+RuntimeError: Whole-robot staging collision: [('<octomap>', 'gripper_left_fingertip_left_link')]
