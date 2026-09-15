@@ -1,0 +1,174 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-13-09-49-29-147733-DESKTOP-TCVDJTQ-1364
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [planning_cloud-1]: process started with pid [1386]
+[INFO] [move_group-2]: process started with pid [1388]
+[INFO] [velocity_watchdog-3]: process started with pid [1390]
+[INFO] [mission_controller-4]: process started with pid [1392]
+[move_group-2] [INFO] [1789292970.369151347] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 63.506 seconds
+[move_group-2] [INFO] [1789292970.369244991] [moveit_robot_model.robot_model]: Loading robot model 'tiago_pro'...
+[move_group-2] [WARN] [1789292970.392718069] [moveit_robot_model.robot_model]: Link torso_fixed_column_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-2] [WARN] [1789292970.719502217] [moveit_robot_model.robot_model]: Link head_screen_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[mission_controller-4] [INFO] [1789292971.335387818] [mission_controller]: STATE:VALIDATING_REQUEST validated launch request and writable repository
+[move_group-2] [INFO] [1789292971.559351424] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-2] [INFO] [1789292971.559898976] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-2] [INFO] [1789292971.564733072] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-2] [INFO] [1789292971.566005792] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-2] [INFO] [1789292971.566075568] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-2] [INFO] [1789292971.567622215] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-2] [INFO] [1789292971.567653790] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-2] [INFO] [1789292971.568512541] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-2] [INFO] [1789292971.569224797] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[mission_controller-4] [INFO] [1789292971.696694974] [mission_controller]: STATE:INITIAL_ORIENTATION fresh odometry, joint feedback and lasers
+[mission_controller-4] [INFO] [1789292971.697517519] [mission_controller]: STATE:SCANNING_SHELF_LABELS live RGB/depth registration and bounded visual sweep
+[move_group-2] [INFO] [1789292972.890442789] [moveit.ros.perception.pointcloud_octomap_updater]: Listening to '/erc/planning/obstacles' using message filter with target frame 'odom '
+[move_group-2] [INFO] [1789292972.890498387] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-2] [INFO] [1789292972.917285872] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-2] [INFO] [1789292972.922168677] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1789292972.922248540] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-2] [INFO] [1789292972.922257324] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-2] [INFO] [1789292972.922284367] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-2] [INFO] [1789292972.922311622] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-2] [INFO] [1789292972.922324043] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1789292972.922366167] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-2] [INFO] [1789292972.922377931] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was not set. Using default value: 0.020000
+[move_group-2] [INFO] [1789292972.922386275] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-2] [INFO] [1789292972.922394311] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-2] [INFO] [1789292972.922400798] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-2] [INFO] [1789292972.922407610] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-2] [INFO] [1789292972.922413073] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-2] [WARN] [1789292972.928567612] [moveit_ros.trajectory_execution_manager]: Parameter '~moveit_controller_manager' is not specified but only one matching plugin was found: 'moveit_simple_controller_manager/MoveItSimpleControllerManager'. Using that one.
+[move_group-2] [ERROR] [1789292972.980106744] [moveit.plugins.moveit_simple_controller_manager]: No controller_names specified.
+[move_group-2] [INFO] [1789292972.981222075] [moveit.plugins.moveit_simple_controller_manager]: Returned 0 controllers in list
+[move_group-2] [INFO] [1789292972.981250129] [moveit.plugins.moveit_simple_controller_manager]: Returned 0 controllers in list
+[move_group-2] [INFO] [1789292972.982528063] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-2] [INFO] [1789292972.982557622] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-2] [INFO] [1789292973.010154418] [move_group.move_group]: 
+[move_group-2] 
+[move_group-2] ********************************************************
+[move_group-2] * MoveGroup using: 
+[move_group-2] *     - ApplyPlanningSceneService
+[move_group-2] *     - ClearOctomapService
+[move_group-2] *     - CartesianPathService
+[move_group-2] *     - GetPlanningSceneService
+[move_group-2] *     - KinematicsService
+[move_group-2] *     - MotionPlanService
+[move_group-2] *     - QueryPlannersService
+[move_group-2] *     - StateValidationService
+[move_group-2] ********************************************************
+[move_group-2] 
+[move_group-2] [INFO] [1789292973.010671969] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-2] [INFO] [1789292973.010815542] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-2] [96mLoading 'move_group/ApplyPlanningSceneService'...
+[move_group-2] [0m[96mLoading 'move_group/ClearOctomapService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupPlanService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-2] [0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[move_group-2] [0m[92m
+[move_group-2] You can start planning now!
+[move_group-2] 
+[mission_controller-4] [INFO] [1789292977.019591617] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292979.274757669] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292981.455395857] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292983.625912533] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292984.978740306] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789292990.087789255] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292992.153509688] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292994.307096329] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292996.380910750] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789292998.061863255] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789293003.882773429] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293005.999677806] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293008.102733881] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293010.190830834] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293011.861402450] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789293045.657767623] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293047.771667500] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293049.863900384] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293052.037093447] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293053.595705313] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789293059.251674477] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293061.323567677] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293063.431878009] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293065.459510676] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293067.231007889] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789293072.960972370] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293075.016202704] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293077.114095904] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293079.212299385] [mission_controller]: VIEW_REJECTED:Need five unique shelf-marker labels
+[mission_controller-4] [INFO] [1789293080.936038875] [mission_controller]: VIEW_INCOMPLETE:stable distinct frames=0
+[mission_controller-4] [INFO] [1789293115.529524601] [mission_controller]: STATE:TARGET_COLUMN_FOUND three distinct stable live frames; label 2
+[mission_controller-4] [INFO] [1789293115.571413956] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260913T094931-44629d/20260913T095155_338314Z_ros90752000000_column_dd3599ec8724.png
+[mission_controller-4] [INFO] [1789293115.572490228] [mission_controller]: STATE:SEARCHING_FOR_BOOK four distinct colors associated using observed 3D marker spacing
+[mission_controller-4] [INFO] [1789293115.573378326] [mission_controller]: STATE:BOOK_FOUND target color red; observed top index 4
+[mission_controller-4] [INFO] [1789293115.595576810] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260913T094931-44629d/20260913T095155_338314Z_ros90752000000_book_ecd3d8d0a20f.png
+[mission_controller-4] [WARN] [1789293115.596875520] [mission_controller]: Row output withheld until official numbering is confirmed
+[mission_controller-4] [INFO] [1789293115.597438505] [mission_controller]: STATE:ROW_IDENTIFIED observed occupied-row index 4; convention unconfirmed
+[mission_controller-4] [INFO] [1789293115.597904987] [mission_controller]: STATE:NAVIGATING_TO_COLUMN target metric point derived from registered live RGB/depth
+[mission_controller-4] [INFO] [1789293115.607023869] [mission_controller]: BASE_GOAL:x=-0.2113,y=-1.5509,heading=-1.5707
+[mission_controller-4] [INFO] [1789293174.836400393] [mission_controller]: BASE_REACHED:x=-0.2098,y=-1.5395,heading=-1.5594
+[mission_controller-4] [INFO] [1789293174.960536060] [mission_controller]: STATE:ALIGNING_TO_TARGET odometry approach reached; close-range visual reacquisition required
+[mission_controller-4] [INFO] [1789293187.521454014] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260913T094931-44629d/20260913T095307_173759Z_ros103786000000_book_7c5a0484eb9e.png
+[mission_controller-4] [INFO] [1789293187.524795975] [mission_controller]: APPROACH_STAGE_PASS: close target verified; grasp still pending
+[mission_controller-4] [INFO] [1789293187.576358093] [mission_controller]: STATE:PREPARING_GRASP fresh metric book surface and whole-body staging checks
+[mission_controller-4] [INFO] [1789293201.642398577] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260913T094931-44629d/20260913T095321_406204Z_ros105866000000_book_344e427621ac.png
+[move_group-2] [INFO] [1789293201.681606540] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Clearing octomap...
+[move_group-2] [INFO] [1789293201.932395396] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Octomap cleared.
+[mission_controller-4] [INFO] [1789293206.666446430] [mission_controller]: BASE_GOAL:x=0.0661,y=-1.5373,heading=-1.5594
+[mission_controller-4] [INFO] [1789293234.304078723] [mission_controller]: BASE_REACHED:x=0.0542,y=-1.5375,heading=-1.5594
+[move_group-2] [INFO] [1789293234.428891709] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Clearing octomap...
+[move_group-2] [INFO] [1789293234.432441113] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Octomap cleared.
+[mission_controller-4] [INFO] [1789293255.342522130] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260913T094931-44629d/20260913T095415_070715Z_ros113916000000_book_d3cfd9703632.png
+[move_group-2] [INFO] [1789293256.263481745] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Clearing octomap...
+[move_group-2] [INFO] [1789293256.267884988] [moveit_move_group_default_capabilities.clear_octomap_service_capability]: Octomap cleared.
+[mission_controller-4] [ERROR] [1789293266.551600107] [mission_controller]: RuntimeError:No collision-free arm IK: -31
+[mission_controller-4] [INFO] [1789293266.696092613] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:No collision-free arm IK: -31; result /opt/dev_submission/results/20260913T094931-44629d.json
+[ERROR] [mission_controller-4]: process has died [pid 1392, exit code 1, cmd '/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/mission_controller --ros-args --params-file /tmp/launch_params_twcilb2c'].
+[INFO] [velocity_watchdog-3]: sending signal 'SIGINT' to process[velocity_watchdog-3]
+[INFO] [move_group-2]: sending signal 'SIGINT' to process[move_group-2]
+[INFO] [planning_cloud-1]: sending signal 'SIGINT' to process[planning_cloud-1]
+[move_group-2] [INFO] [1789293267.157398263] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[move_group-2] [INFO] [1789293267.203227926] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[planning_cloud-1] Traceback (most recent call last):
+[planning_cloud-1]   File "/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/planning_cloud", line 33, in <module>
+[planning_cloud-1]     sys.exit(load_entry_point('aurak-erc-solution==0.1.0', 'console_scripts', 'planning_cloud')())
+[planning_cloud-1]   File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/planning_cloud.py", line 61, in main
+[planning_cloud-1]     try: rclpy.spin(node)
+[planning_cloud-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[planning_cloud-1]     executor.spin_once()
+[planning_cloud-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[planning_cloud-1]     self._spin_once_impl(timeout_sec)
+[planning_cloud-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+[planning_cloud-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[planning_cloud-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+[planning_cloud-1]     return next(self._cb_iter)
+[planning_cloud-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 677, in _wait_for_ready_callbacks
+[planning_cloud-1]     wait_set.wait(timeout_nsec)
+[planning_cloud-1] KeyboardInterrupt
+[move_group-2] [INFO] [1789293267.409556168] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-2] [INFO] [1789293267.416283098] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-2] [INFO] [1789293267.419670513] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-2] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-2]          at line 127 in ./src/class_loader.cpp
+[ERROR] [planning_cloud-1]: process has died [pid 1386, exit code -2, cmd '/opt/dev_ws/install/aurak_erc_solution/lib/aurak_erc_solution/planning_cloud --ros-args --params-file /tmp/launch_params_rpup7am_'].
+[move_group-2] Stack trace (most recent call last):
+[move_group-2] #11   Object "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", at 0xffffffffffffffff, in 
+[move_group-2] #10   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5a40b5554724, in 
+[move_group-2] #9    Object "/usr/lib/x86_64-linux-gnu/libc.so.6", at 0x786c47e72e3f, in __libc_start_main
+[move_group-2] #8    Object "/usr/lib/x86_64-linux-gnu/libc.so.6", at 0x786c47e72d8f, in 
+[move_group-2] #7    Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5a40b55536a1, in 
+[move_group-2] #6    Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5a40b5555709, in 
+[move_group-2] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c4843ab2e, in rclcpp::Node::~Node()
+[move_group-2] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c48415d39, in 
+[move_group-2] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c484440b9, in 
+[move_group-2] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c48444000, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-2] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c48415d39, in 
+[move_group-2] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x786c4841ab31, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-2] Segmentation fault (Address not mapped to object [0x786c28699580])
+[INFO] [velocity_watchdog-3]: process has finished cleanly [pid 1390]
+[ERROR] [move_group-2]: process[move_group-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [move_group-2]: sending signal 'SIGTERM' to process[move_group-2]
+[ERROR] [move_group-2]: process has died [pid 1388, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_yw31gjw_'].
+[move_group-2] [0m

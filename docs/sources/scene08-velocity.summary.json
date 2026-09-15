@@ -1,0 +1,7 @@
+{
+  "samples": 501,
+  "nonzero_samples": 357,
+  "simulation_duration_s": 4.608000000000004,
+  "max_planar_speed_m_s": 0.18000000000000002,
+  "max_angular_speed_rad_s": 0.0
+}

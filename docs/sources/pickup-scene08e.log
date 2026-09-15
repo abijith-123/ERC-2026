@@ -1,0 +1,24 @@
+[INFO] [1789416205.603769455] [mission_controller]: DIAGNOSTIC_STAGE:PREPARING_GRASP fresh metric book surface and whole-body staging checks
+[INFO] [1789416221.163135912] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260914T200324-25ec72/20260914T200340_857914Z_ros329110000000_book_57ba0004e19e.png
+[INFO] [1789416221.914231604] [mission_controller]: BASE_GOAL:x=0.0680,y=-1.5373,heading=-1.5594
+[INFO] [1789416222.407263849] [mission_controller]: BASE_REACHED:x=0.0564,y=-1.5375,heading=-1.5594
+[INFO] [1789416245.045376007] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260914T200324-25ec72/20260914T200404_792093Z_ros332310000000_book_a62b3c5cdf38.png
+[INFO] [1789416266.985100908] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260914T200324-25ec72/20260914T200426_707667Z_ros335512000000_book_57e9edc31383.png
+[INFO] [1789416276.127157651] [mission_controller]: CHECKED_BOOK_STANDOFF:1.100
+[INFO] [1789416276.753131311] [mission_controller]: BASE_GOAL:x=0.0582,y=-1.6936,heading=-1.5594
+[INFO] [1789416300.089850593] [mission_controller]: BASE_REACHED:x=0.0581,y=-1.6819,heading=-1.5594
+[INFO] [1789416323.738008190] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260914T200324-25ec72/20260914T200523_455108Z_ros341914000000_book_74b5040882ce.png
+[INFO] [1789416331.807015154] [mission_controller]: ARM_PLAN_PASS: 75 waypoints, 129 collision samples, 7.30 simulated seconds
+[INFO] [1789416421.181752198] [mission_controller]: EVIDENCE:/opt/dev_submission/erc_images/20260914T200324-25ec72/20260914T200700_765937Z_ros354420000000_book_e80e3fc1a202.png
+[INFO] [1789416422.483383359] [mission_controller]: DIAGNOSTIC_STAGE:GRASPING_BOOK observed surface model; collision-checked straight insertion
+[INFO] [1789416422.947401587] [mission_controller]: TRIAL_NOT_COMPLETE:RuntimeError:Incomplete collision-checked Cartesian path: 0.8461538461538461; result /opt/dev_submission/results/20260914T200324-25ec72.json
+Traceback (most recent call last):
+  File "/opt/dev_submission/scripts/resume_observed_pickup.py", line 59, in <module>
+    main()
+  File "/opt/dev_submission/scripts/resume_observed_pickup.py", line 35, in main
+    pinch=motion.pickup()
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/manipulation.py", line 136, in pickup
+    self.execute(self.planner.plan_straight(front+.025*normal, yaw=yaw))
+  File "/opt/dev_ws/install/aurak_erc_solution/lib/python3.10/site-packages/aurak_erc_solution/arm_planning.py", line 118, in plan_straight
+    raise RuntimeError('Incomplete collision-checked Cartesian path: '+str(response.fraction))
+RuntimeError: Incomplete collision-checked Cartesian path: 0.8461538461538461
